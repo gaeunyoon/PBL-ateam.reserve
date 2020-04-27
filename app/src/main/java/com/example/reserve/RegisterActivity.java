@@ -2,6 +2,7 @@ package com.example.reserve;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,8 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
+
+import static androidx.core.os.LocaleListCompat.create;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -37,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText PhoneNumberText=(EditText) findViewById(R.id.PhoneNumberText);
 
         final Button validateButton=(Button) findViewById(R.id.validateButton);
-        validateButton.setOnClickListener(new View.OnClickListener(){
+        validateButton.setOnClickListener(new View .OnClickListener(){
 
             @Override
             public void onClick(View view){
@@ -49,8 +52,8 @@ public class RegisterActivity extends AppCompatActivity {
                 {
                     AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
                     dialog=builder.setMessage(("아이디는 빈칸일 수 없습니다.")
-                            .setPositiveButton("확인", null)
-                            .create();
+                            .set .PositiveButton("확인",null)
+                            .create());
                     dialog.show();
                     return;
                 }
@@ -95,7 +98,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
                                 Button registerButton=(Button) findViewById(R.id.registerButton);
-                                registerButton.setOnClickListener(new View.OnClickListener() {
+                                registerButton.setOnClickListener(new OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
                                         String userID=idText.getText().toString();
@@ -139,7 +142,7 @@ public class RegisterActivity extends AppCompatActivity {
                                                             AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
                                                             dialog=builder.setMessage(("회원등록에 실패하였습니다")
                                                                     .setNegativeButton("확인",null)
-                                                                    .create();
+                                                                    .create());
                                                             dialog.show();
                                                         }
                                                     }
@@ -166,4 +169,4 @@ public class RegisterActivity extends AppCompatActivity {
                                                                 }
         }
     }
-}
+

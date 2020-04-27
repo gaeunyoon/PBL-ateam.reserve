@@ -93,8 +93,8 @@
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff"
                 android:id="@+id/nameText"
-                android:drawableStart="@drawable/ic_mail_outline_black_24dp"
-                android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                android:drawableStart="@drawable/ic_create_black_24dp"
+                android:drawableLeft="@drawable/ic_create_black_24dp"
                 android:layout_marginTop="10dp"
                 android:background="#ff99"
                 tools:ignore="DuplicateIds" />
@@ -109,8 +109,8 @@
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff"
                 android:id="@+id/PhoneNumberText"
-                android:drawableStart="@drawable/ic_mail_outline_black_24dp"
-                android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                android:drawableStart="@drawable/ic_phone_black_24dp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
                 android:layout_marginTop="10dp"
                 android:background="#ff99"
                 tools:ignore="DuplicateIds" />
