@@ -3,7 +3,6 @@ package com.example.reserve;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,12 +11,13 @@ public class RegisterRequest extends StringRequest{
     final static private String URL = "http://gaeun0215.cafe24.com/UserRegister.php";
     private Map<String, String> parameters;
 
-    public RegisterRequest(String userID, String userPassword, String userEmail, Response.Listener<String> listener){
+    public RegisterRequest(String userID, String userPassword, String userName, String userPhoneNumber, Response.Listener<String> listener){
 super(Method.POST, URL, listener, null);
 parameters=new HashMap<>();
 parameters.put("userID",userID);
 parameters.put("userPassword",userPassword);
-parameters.put("UserEmail",userEmail);
+parameters.put("UserName",userName);
+        parameters.put("UserPhoneNumber",userPhoneNumber);
     }
 
     @Override
