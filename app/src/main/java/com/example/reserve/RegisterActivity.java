@@ -51,9 +51,9 @@ public class RegisterActivity extends AppCompatActivity {
                 if(userID.equals(""))
                 {
                     AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                    dialog=builder.setMessage(("아이디는 빈칸일 수 없습니다.")
-                            .set .PositiveButton("확인",null)
-                            .create());
+                    dialog = builder.setMessage("아이디는 빈칸일 수 없습니다.")
+                            .setPositiveButton("확인", null)
+                            .create();
                     dialog.show();
                     return;
                 }
@@ -67,8 +67,8 @@ public class RegisterActivity extends AppCompatActivity {
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
-                                dialog = builder.setMessage(("사용할 수 있는 아이디입니다")
-                                        .setPositiveButton("확인", null)
+                                dialog = builder.setMessage("사용할 수 있는 아이디입니다.")
+                                      .setPositiveButton("확인", null)
                                         .create();
                                 dialog.show();
                                 idText.setEnabled(false);
@@ -78,7 +78,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
-                                dialog = builder.setMessage(("사용할 수 없는 아이디입니다")
+                                dialog = builder.setMessage("사용할 수 없는 아이디입니다.")
                                         .setNegativeButton("확인", null)
                                         .create();
                                 dialog.show();
@@ -107,8 +107,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                                         if(!validate){
                                             AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                            dialog=builder.setMessage(("먼저 중복 체크를 해주세요")
-                                                    .setNegativeButton("확인",null)
+                                            dialog=builder.setMessage("먼저 중복 체크를 해주세요.")
+                                               .setNegativeButton("확인",null)
                                                     .create();
                                             dialog.show();
                                             return;
@@ -116,8 +116,8 @@ public class RegisterActivity extends AppCompatActivity {
                                         if(userID.equals("")||userPassword.equals("")||userName.equals("")||userPhoneNumber.equals("")){
                                             if(userID.equals("")){
                                                 AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                                dialog=builder.setMessage(("빈칸없이 입력해주세요")
-                                                        .setNegativeButtonn("확인",null)
+                                                dialog = builder.setMessage("빈칸없이 입력해주세요.")
+                                                        .setNegativeButton("확인", null)
                                                         .create();
                                                 dialog.show();
                                                 return;
@@ -131,8 +131,8 @@ public class RegisterActivity extends AppCompatActivity {
                                                         boolean success=jsonResponse.getBoolean("success");
                                                         if(success){
                                                             AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                                            dialog=builder.setMessage(("회원등록에 성공했습니다")
-                                                                    .setPositiveButton("확인",null)
+                                                            dialog=builder.setMessage("회원등록에 성공했습니다.")
+                                                          .setPositiveButton("확인",null)
                                                                     .create();
                                                             dialog.show();
                                                             finish();
@@ -140,9 +140,9 @@ public class RegisterActivity extends AppCompatActivity {
                                                         }
                                                         else{
                                                             AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                                            dialog=builder.setMessage(("회원등록에 실패하였습니다")
-                                                                    .setNegativeButton("확인",null)
-                                                                    .create());
+                                                            dialog = builder.setMessage("회원등록에 실패하였습니다.")
+                                                                    .setNegativeButton("확인", null)
+                                                                    .create();
                                                             dialog.show();
                                                         }
                                                     }
