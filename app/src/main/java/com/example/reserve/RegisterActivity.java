@@ -16,8 +16,6 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
 
-import static androidx.core.os.LocaleListCompat.create;
-
 public class RegisterActivity extends AppCompatActivity {
 
     private ArrayAdapter adapter;
@@ -60,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
 
-                  @Override
+                    @Override
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
@@ -68,7 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
                             if (success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("사용할 수 있는 아이디입니다.")
-                                      .setPositiveButton("확인", null)
+                                        .setPositiveButton("확인", null)
                                         .create();
                                 dialog.show();
                                 idText.setEnabled(false);
@@ -88,8 +86,10 @@ public class RegisterActivity extends AppCompatActivity {
                         {
                             e.printStackTrace();
                         }
+
                     }
-                };
+                    };
+
                 ValidateRequest validateRequest=new ValidateRequest(userID, responseListener);
                 RequestQueue queue= Volley.newRequestQueue(RegisterActivity.this);
                 queue = Volley.newRequestQueue(RegisterActivity.this);

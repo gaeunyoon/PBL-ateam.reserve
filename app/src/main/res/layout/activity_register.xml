@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textClolor="#ffffff"
+                android:textColor="#ffffff"
                 android:background="#ff99"
                 android:text="가입하기"
                 android:layout_marginTop="10dp"
