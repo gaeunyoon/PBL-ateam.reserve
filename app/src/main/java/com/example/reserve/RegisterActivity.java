@@ -2,7 +2,6 @@ package com.example.reserve;
 
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -81,9 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         .create();
                                 dialog.show();
                             }
-                        }
-                        catch (Exception e)
-                        {
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
 
@@ -92,18 +89,19 @@ public class RegisterActivity extends AppCompatActivity {
 
                 ValidateRequest validateRequest=new ValidateRequest(userID, responseListener);
                 RequestQueue queue= Volley.newRequestQueue(RegisterActivity.this);
-                queue = Volley.newRequestQueue(RegisterActivity.this);
+
                 queue.add(validateRequest);
             
             }
         });
                                 Button registerButton=(Button) findViewById(R.id.registerButton);
-                                registerButton.setOnClickListener(new OnClickListener() {
+                                registerButton.setOnClickListener(new View.OnClickListener() {
                                     @Override
-                                    public void onClick(View v) {
+                                    public void onClick(View view) {
                                         String userID=idText.getText().toString();
-                                        String userPassword=idText.getText().toString();
-                                        String userEmail=idText.getText().toString();
+                                        String userPassword=passwordText.getText().toString();
+                                        String userName=nameText.getText().toString();
+                                        String userPhoneNumber=PhoneNumberText.getText().toString();
 
                                         if(!validate){
                                             AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
@@ -113,8 +111,8 @@ public class RegisterActivity extends AppCompatActivity {
                                             dialog.show();
                                             return;
                                         }
-                                        if(userID.equals("")||userPassword.equals("")||userName.equals("")||userPhoneNumber.equals("")){
-                                            if(userID.equals("")){
+                                        if(userID.equals("")||userPassword.equals("")||userName.equals("")||userPhoneNumber.equals(""))
+                                        {
                                                 AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
                                                 dialog = builder.setMessage("빈칸없이 입력해주세요.")
                                                         .setNegativeButton("확인", null)
@@ -125,30 +123,29 @@ public class RegisterActivity extends AppCompatActivity {
                                             Response.Listener<String> responseListener=new Response.Listener<String>() {
                                             
                                                 @Override
-                                                public void onResponse(String response){
+                                                public void onResponse(String response) {
                                                     try {
-                                                        JSONObject jsonResponse=new JSONObject(response);
-                                                        boolean success=jsonResponse.getBoolean("success");
-                                                        if(success){
-                                                            AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                                            dialog=builder.setMessage("회원등록에 성공했습니다.")
-                                                          .setPositiveButton("확인",null)
+                                                        JSONObject jsonResponse = new JSONObject(response);
+                                                        boolean success = jsonResponse.getBoolean("success");
+                                                        if (success) {
+                                                            AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                                                            dialog = builder.setMessage("회원등록에 성공했습니다.")
+                                                                    .setPositiveButton("확인", null)
                                                                     .create();
                                                             dialog.show();
                                                             finish();
-                                                           
-                                                        }
-                                                        else{
-                                                            AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
+
+                                                        } else {
+                                                            AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                                             dialog = builder.setMessage("회원등록에 실패하였습니다.")
                                                                     .setNegativeButton("확인", null)
                                                                     .create();
                                                             dialog.show();
                                                         }
-                                                    }
-                                                    catch (Exception e){
+                                                    } catch (Exception e) {
                                                         e.printStackTrace();
                                                     }
+
                                                 }
                                             };
                                             RegisterRequest registerRequest=new RegisterRequest(userID,userPassword,userName,userPhoneNumber, responseListener);
@@ -156,9 +153,8 @@ public class RegisterActivity extends AppCompatActivity {
                                             queue.add(registerRequest);
 
                                         }
-                                    }
-                                });
-    }
+                                    });
+                                }
                                                             @Override
                                                                     protected void onStop(){
                                                                 super.onStop();
