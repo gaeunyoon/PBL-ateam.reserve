@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,6 +13,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="5dp">
 
+        //메뉴버튼
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,6 +27,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"/>
 
+        //자리예약 버튼
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,6 +41,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"/>
 
+        //주문내역 버튼
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,34 +66,36 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/notice">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="vertical"
+                android:layout_height="224dp"
+                android:layout_marginTop="8dp"
                 android:background="#ff99"
-                android:layout_marginTop="8dp">
+                android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="125dp"
-                    android:layout_height="125dp"
+                    android:layout_width="194dp"
+                    android:layout_height="153dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/logo2" />
+                    android:scaleType="center"
+                    android:src="@drawable/logo3" />
 
                 <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="공지사항"
-                android:textColor="#ffffff"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="공지사항"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </LinearLayout>
 
+        //fragment로 화면전환
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
