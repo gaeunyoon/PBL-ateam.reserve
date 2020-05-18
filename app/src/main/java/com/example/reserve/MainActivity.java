@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.commit();
             }
         });
+        new BackgroundTask().execute();
 
     }
 
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPreExecute(){
-            target="http//gaeun0215.cafe24.con/NoticeList.php";//target에 해당php 파일과 연결시켜줌
+            target="https://gaeun0215.cafe24.com/NoticeList.php";//target에 해당php 파일과 연결시켜줌
         }
 
         @Override
