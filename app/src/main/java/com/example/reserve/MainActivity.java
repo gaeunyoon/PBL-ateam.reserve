@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         reserveButton.setOnClickListener(new View.OnClickListener(){//자리예약화면으로 전환
-           @Override
+            @Override
             public void onClick(View view){
                 notice.setVisibility(View.GONE);
                 menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
