@@ -80,7 +80,9 @@ public class RegisterActivity extends AppCompatActivity {
                                         .create();
                                 dialog.show();
                             }
-                        } catch (Exception e) {
+                        }
+                        catch (Exception e)
+                        {
                             e.printStackTrace();
                         }
 
@@ -89,7 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 ValidateRequest validateRequest=new ValidateRequest(userID, responseListener);
                 RequestQueue queue= Volley.newRequestQueue(RegisterActivity.this);
-
+                queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(validateRequest);
             
             }
@@ -98,30 +100,29 @@ public class RegisterActivity extends AppCompatActivity {
                                 registerButton.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        String userID=idText.getText().toString();
-                                        String userPassword=passwordText.getText().toString();
-                                        String userName=nameText.getText().toString();
-                                        String userPhoneNumber=PhoneNumberText.getText().toString();
+                                        String userID = idText.getText().toString();
+                                        String userPassword = passwordText.getText().toString();
+                                        String userName = nameText.getText().toString();
+                                        String userPhoneNumber = PhoneNumberText.getText().toString();
 
-                                        if(!validate){
-                                            AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                            dialog=builder.setMessage("먼저 중복 체크를 해주세요.")
-                                               .setNegativeButton("확인",null)
+                                        if (!validate) {
+                                            AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                                            dialog = builder.setMessage("먼저 중복 체크를 해주세요.")
+                                                    .setNegativeButton("확인", null)
                                                     .create();
                                             dialog.show();
                                             return;
                                         }
-                                        if(userID.equals("")||userPassword.equals("")||userName.equals("")||userPhoneNumber.equals(""))
-                                        {
-                                                AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
+                                        if (userID.equals("") || userPassword.equals("") || userName.equals("") || userPhoneNumber.equals("")) {
+                                                AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                                 dialog = builder.setMessage("빈칸없이 입력해주세요.")
                                                         .setNegativeButton("확인", null)
                                                         .create();
                                                 dialog.show();
                                                 return;
                                             }
-                                            Response.Listener<String> responseListener=new Response.Listener<String>() {
-                                            
+                                            Response.Listener<String> responseListener = new Response.Listener<String>() {
+
                                                 @Override
                                                 public void onResponse(String response) {
                                                     try {
@@ -142,19 +143,20 @@ public class RegisterActivity extends AppCompatActivity {
                                                                     .create();
                                                             dialog.show();
                                                         }
-                                                    } catch (Exception e) {
+                                                    }
+                                                    catch (Exception e) {
                                                         e.printStackTrace();
                                                     }
-
                                                 }
                                             };
-                                            RegisterRequest registerRequest=new RegisterRequest(userID,userPassword,userName,userPhoneNumber, responseListener);
-                                            RequestQueue queue=Volley.newRequestQueue(RegisterActivity.this);
+                                            RegisterRequest registerRequest = new RegisterRequest(userID, userPassword, userName, userPhoneNumber, responseListener);
+                                            RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                                             queue.add(registerRequest);
 
                                         }
-                                    });
-                                }
+
+                                });
+    }
                                                             @Override
                                                                     protected void onStop(){
                                                                 super.onStop();

@@ -16,8 +16,8 @@ super(Method.POST, URL, listener, null);
 parameters=new HashMap<>();
 parameters.put("userID",userID);
 parameters.put("userPassword",userPassword);
-parameters.put("UserName",userName);
-        parameters.put("UserPhoneNumber",userPhoneNumber);
+parameters.put("userName",userName);
+        parameters.put("userPhoneNumber",userPhoneNumber);
     }
 
     @Override
