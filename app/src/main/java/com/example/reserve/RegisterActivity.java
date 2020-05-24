@@ -80,89 +80,90 @@ public class RegisterActivity extends AppCompatActivity {
                                         .create();
                                 dialog.show();
                             }
-                        } catch (Exception e) {
+                        }
+                        catch (Exception e)
+                        {
                             e.printStackTrace();
                         }
 
                     }
-                    };
+                };
 
                 ValidateRequest validateRequest=new ValidateRequest(userID, responseListener);
                 RequestQueue queue= Volley.newRequestQueue(RegisterActivity.this);
-
+                queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(validateRequest);
-            
+
             }
         });
-                                Button registerButton=(Button) findViewById(R.id.registerButton);
-                                registerButton.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View view) {
-                                        String userID=idText.getText().toString();
-                                        String userPassword=passwordText.getText().toString();
-                                        String userName=nameText.getText().toString();
-                                        String userPhoneNumber=PhoneNumberText.getText().toString();
+        Button registerButton=(Button) findViewById(R.id.registerButton);
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String userID = idText.getText().toString();
+                String userPassword = passwordText.getText().toString();
+                String userName = nameText.getText().toString();
+                String userPhoneNumber = PhoneNumberText.getText().toString();
 
-                                        if(!validate){
-                                            AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                            dialog=builder.setMessage("먼저 중복 체크를 해주세요.")
-                                               .setNegativeButton("확인",null)
-                                                    .create();
-                                            dialog.show();
-                                            return;
-                                        }
-                                        if(userID.equals("")||userPassword.equals("")||userName.equals("")||userPhoneNumber.equals(""))
-                                        {
-                                                AlertDialog.Builder builder=new AlertDialog.Builder(RegisterActivity.this);
-                                                dialog = builder.setMessage("빈칸없이 입력해주세요.")
-                                                        .setNegativeButton("확인", null)
-                                                        .create();
-                                                dialog.show();
-                                                return;
-                                            }
-                                            Response.Listener<String> responseListener=new Response.Listener<String>() {
-                                            
-                                                @Override
-                                                public void onResponse(String response) {
-                                                    try {
-                                                        JSONObject jsonResponse = new JSONObject(response);
-                                                        boolean success = jsonResponse.getBoolean("success");
-                                                        if (success) {
-                                                            AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
-                                                            dialog = builder.setMessage("회원등록에 성공했습니다.")
-                                                                    .setPositiveButton("확인", null)
-                                                                    .create();
-                                                            dialog.show();
-                                                            finish();
+                if (!validate) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                    dialog = builder.setMessage("먼저 중복 체크를 해주세요.")
+                            .setNegativeButton("확인", null)
+                            .create();
+                    dialog.show();
+                    return;
+                }
+                if (userID.equals("") || userPassword.equals("") || userName.equals("") || userPhoneNumber.equals("")) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                    dialog = builder.setMessage("빈칸없이 입력해주세요.")
+                            .setNegativeButton("확인", null)
+                            .create();
+                    dialog.show();
+                    return;
+                }
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
 
-                                                        } else {
-                                                            AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
-                                                            dialog = builder.setMessage("회원등록에 실패하였습니다.")
-                                                                    .setNegativeButton("확인", null)
-                                                                    .create();
-                                                            dialog.show();
-                                                        }
-                                                    } catch (Exception e) {
-                                                        e.printStackTrace();
-                                                    }
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
+                            if (success) {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                                dialog = builder.setMessage("회원등록에 성공했습니다.")
+                                        .setPositiveButton("확인", null)
+                                        .create();
+                                dialog.show();
+                                finish();
 
-                                                }
-                                            };
-                                            RegisterRequest registerRequest=new RegisterRequest(userID,userPassword,userName,userPhoneNumber, responseListener);
-                                            RequestQueue queue=Volley.newRequestQueue(RegisterActivity.this);
-                                            queue.add(registerRequest);
+                            } else {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                                dialog = builder.setMessage("회원등록에 실패하였습니다.")
+                                        .setNegativeButton("확인", null)
+                                        .create();
+                                dialog.show();
+                            }
+                        }
+                        catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                RegisterRequest registerRequest = new RegisterRequest(userID, userPassword, userName, userPhoneNumber, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
+                queue.add(registerRequest);
 
-                                        }
-                                    });
-                                }
-                                                            @Override
-                                                                    protected void onStop(){
-                                                                super.onStop();
-                                                                if(dialog !=null)
-                                                                {
-                                                                    dialog.dismiss();
-                                                                    dialog=null; 
-                                                                }
+            }
+
+        });
+    }
+    @Override
+    protected void onStop(){
+        super.onStop();
+        if(dialog !=null)
+        {
+            dialog.dismiss();
+            dialog=null;
         }
     }
-
+}
