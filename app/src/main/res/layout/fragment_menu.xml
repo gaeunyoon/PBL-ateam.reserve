@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MenuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="메뉴 목록" />
+   <RadioGroup
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/menu"
+       android:layout_gravity="center_horizontal"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"/>
 
-</FrameLayout>
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="COFFEE"
+           android:id="@+id/coffee"/>
+
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="NON-COFFEE"
+           android:id="@+id/noncoffee"/>
+
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="DESSERT"
+           android:id="@+id/dessert"/>
+
+
+
+</LinearLayout>
