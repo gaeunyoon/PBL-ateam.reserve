@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private NoticeListAdapter adapter;
     private List<Notice> noticeList;
 
+
     @Override
     protected void onCreate(Bundle savedinstanceState){
         super.onCreate(savedinstanceState);

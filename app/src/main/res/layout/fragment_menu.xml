@@ -6,34 +6,86 @@
     android:orientation="vertical"
     tools:context=".MenuFragment">
 
-   <RadioGroup
-       android:layout_width="200dp"
-       android:layout_height="wrap_content"
-       android:id="@+id/menu"
-       android:layout_gravity="center_horizontal"
-       android:orientation="horizontal"
-       android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="77dp"><![CDATA[>]]>
 
-       <RadioButton
-           android:layout_width="0dp"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:text="COFFEE"
-           android:id="@+id/coffee"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-       <RadioButton
-           android:layout_width="0dp"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:text="NON-COFFEE"
-           android:id="@+id/noncoffee"/>
 
-       <RadioButton
-           android:layout_width="0dp"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:text="DESSERT"
-           android:id="@+id/dessert"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:background="#ff99"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/logo3"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="메뉴 주문하기"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/CoffeeButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="#ff99"
+                android:text="coffee"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/DesertButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="#ff99"
+                android:text="Desert"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/NoncoffeeButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="#ff99"
+                android:text="Noncoffee"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 
 
