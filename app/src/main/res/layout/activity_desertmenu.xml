@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".CoffeeFragment">
+    tools:context=".DessertFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                 <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="131dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/berry"
                     android:visibility="visible" />
@@ -115,13 +115,13 @@
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="30dp"
-                    android:text="딸기케이크"
+                    android:text="케이크"
                     android:textSize="24sp" />
 
                 <Spinner
-                    android:id="@+id/countSpinner1"
+                    android:id="@+id/countSpinner4"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -139,11 +139,13 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="131dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:visibility="visible"
-                    android:src="@drawable/cheese" />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ma"
+                    android:visibility="visible" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -151,11 +153,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="30dp"
-                    android:text="치즈케이크"
+                    android:text="마카롱"
                     android:textSize="24sp" />
 
                 <Spinner
-                    android:id="@+id/countSpinner2"
+                    android:id="@+id/countSpinner5"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -184,17 +186,17 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="30dp"
-                    android:text="앙버터스콘"
+                    android:text="스콘"
                     android:textSize="24sp" />
 
                 <Spinner
-                    android:id="@+id/countSpinner3"
+                    android:id="@+id/countSpinner6"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="20dp">
+                    android:layout_marginLeft="30dp">
 
                 </Spinner>
 

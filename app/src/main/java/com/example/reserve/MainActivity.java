@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -154,4 +155,18 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    private long lastTimeBackPressed;
+    //뒤로가기 버튼 두번 눌렀을때 앱 종료
+    @Override
+    public void onBackPressed(){
+        //한번 버튼 누른 후 1.5초 이내로 한번 더 누르면 종료
+        if(System.currentTimeMillis()-lastTimeBackPressed<1500)
+        {
+            finish();
+            return;
+        }
+        Toast.makeText(this, "Good Bye",Toast.LENGTH_SHORT);
+        lastTimeBackPressed=System.currentTimeMillis();
+    }
+
 }

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
 
 import androidx.fragment.app.Fragment;
 
@@ -49,12 +50,32 @@ public class MenuFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
     }
+    private Spinner countSpinner1;
+    private Spinner countSpinner2;
+    private Spinner countSpinner3;
+    private Spinner countSpinner4;
+    private Spinner countSpinner5;
+    private Spinner countSpinner6;
+
+    @Override
+    public void onActivityCreated(Bundle b){
+        super.onActivityCreated(b);
+//각 스피너의 항목들을 보여줄수 있도록한다.
+        countSpinner1=(Spinner)getView().findViewById(R.id.countSpinner1);
+        countSpinner2=(Spinner)getView().findViewById(R.id.countSpinner2);
+        countSpinner3=(Spinner)getView().findViewById(R.id.countSpinner3);
+        countSpinner4=(Spinner)getView().findViewById(R.id.countSpinner4);
+        countSpinner5=(Spinner)getView().findViewById(R.id.countSpinner5);
+        countSpinner6=(Spinner)getView().findViewById(R.id.countSpinner6);
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

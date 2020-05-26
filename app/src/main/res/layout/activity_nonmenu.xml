@@ -1,145 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".NonCoffeeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp">
 
+        //메뉴버튼
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/menuButton"
+            android:text="메뉴"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:background="#ff99"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+
+        //자리예약 버튼
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/reserveButton"
+            android:text="자리예약"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:background="#ff99"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+
+        //주문내역 버튼
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/statisticButton"
+            android:text="주문 내역"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:background="#ff99"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+    //framelayout 버튼 누를시 화면전환
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="192dp"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/notice">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="84dp"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:src="@drawable/logo2"></ImageView>
+                android:layout_height="224dp"
+                android:layout_marginTop="8dp"
+                android:background="#ff99"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="메뉴 주문하기"
-                android:textColor="#FFFFFFFF"
-                android:textSize="25dp" />
+                <ImageButton
+                    android:layout_width="194dp"
+                    android:layout_height="153dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="center"
+                    android:src="@drawable/logo3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="NON-COFFEE"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="447dp"
+                android:layout_height="100dp"
+
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="131dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/black"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="흑당라떼"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/countSpinner1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="447dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="131dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:src="@drawable/straw" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="딸기라떼"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/countSpinner2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="447dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="131dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:src="@drawable/milk" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="밀크티"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/countSpinner3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp">
+
+                </Spinner>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:text="NONCOFFEE"
-            android:textSize="30sp" />
+        //fragment로 화면전환
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment">
+        </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="447dp"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-
-                android:text="흑당라떼"
-                android:textSize="30dp" />
-
-            <EditText
-                android:id="@+id/editText11"
-                android:layout_width="123dp"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </LinearLayout>
+    </FrameLayout>
 
 
-        <LinearLayout
-            android:layout_width="447dp"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="50dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-
-                android:text="딸기스무디"
-                android:textSize="30dp" />
-
-            <EditText
-                android:id="@+id/editText12"
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="447dp"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="50dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-
-                android:text="밀크티"
-                android:textSize="30dp" />
-
-            <EditText
-                android:id="@+id/editText13"
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="447dp"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="50dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-
-                android:text="자몽에이드"
-                android:textSize="30dp" />
-
-            <EditText
-                android:id="@+id/editText14"
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
