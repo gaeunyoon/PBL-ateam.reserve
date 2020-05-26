@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.commit();
             }
         });
+
         new BackgroundTask().execute();
 
     }

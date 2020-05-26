@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".MenuFragment">
+    tools:context=".CoffeeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,6 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -87,52 +89,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="메뉴 주문"
+                    android:text="자리현황"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/CoffeeButton"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff"
-                android:background="@color/colorPrimary"
-                android:text="coffee"
-                android:layout_marginTop="80dp"
-                android:layout_gravity="center"/>
-
-            <Button
-                android:id="@+id/DessertButton"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff"
-                android:background="@color/colorPrimary"
-                android:text="Dessert"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="center"/>
-
-
-            <Button
-                android:id="@+id/NonCoffeeButton"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff"
-                android:background="@color/colorPrimary"
-                android:text="NonCoffee"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="center"/>
-
-
         </LinearLayout>
+
 
         //fragment로 화면전환
         <RelativeLayout
