@@ -1,5 +1,6 @@
 package com.example.reserve;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Notice> noticeList;
 
 
+
     @Override
     protected void onCreate(Bundle savedinstanceState){
         super.onCreate(savedinstanceState);
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         menuButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+
                 notice.setVisibility(View.GONE); //공지사항 linearlayout 이 해당 fragment로 보이게 화면전환
                 menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));//menu 버튼만 어두운색으로
                 reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -65,8 +68,13 @@ public class MainActivity extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment, new MenuFragment());
                 fragmentTransaction.commit();
+
+
             }
         });
+
+
+
         reserveButton.setOnClickListener(new View.OnClickListener(){//자리예약화면으로 전환
             @Override
             public void onClick(View view){
@@ -93,7 +101,9 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.commit();
             }
         });
-        new BackgroundTask().execute();
+
+
+
 
     }
 
