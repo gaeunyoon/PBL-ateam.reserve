@@ -10,7 +10,11 @@
         android:label="Registeration"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Sit"></activity>
+        <activity android:name=".ReserveActivity"></activity>
+        <activity android:name=".NoncoffeeActivity" />
+        <activity android:name=".DesertActivity" />
+        <activity android:name=".Menu1Activity" />
+        <activity android:name=".Sit" />
         <activity android:name=".CoffeeActivity" />
         <activity
             android:name=".Splashscreen"

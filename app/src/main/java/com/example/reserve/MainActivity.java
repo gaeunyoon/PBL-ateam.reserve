@@ -60,15 +60,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
 
-                notice.setVisibility(View.GONE); //공지사항 linearlayout 이 해당 fragment로 보이게 화면전환
-                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));//menu 버튼만 어두운색으로
-                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                FragmentManager fragmentManager=getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment, new MenuFragment());
-                fragmentTransaction.commit();
+                Intent intent = new Intent(getApplicationContext(), Menu1Activity.class );
 
+                startActivity(intent);
 
             }
         });
@@ -78,27 +72,17 @@ public class MainActivity extends AppCompatActivity {
         reserveButton.setOnClickListener(new View.OnClickListener(){//자리예약화면으로 전환
             @Override
             public void onClick(View view){
-                notice.setVisibility(View.GONE);
-                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));//reserve 버튼만 어두운색으로
-                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                FragmentManager fragmentManager=getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment, new ReserveFragment());
-                fragmentTransaction.commit();
+
+                Intent intent = new Intent(getApplicationContext(), Sit.class );
+
+                startActivity(intent);
+
             }
         });
         statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
-                notice.setVisibility(View.GONE);
-                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));//statistic 버튼만 어두운색으로
-                FragmentManager fragmentManager=getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment, new StatisticFragment());
-                fragmentTransaction.commit();
+
             }
         });
 
