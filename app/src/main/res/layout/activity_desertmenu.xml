@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".DessertFragment">
+    tools:context=".DessertActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,15 +58,19 @@
 
     </LinearLayout>
     //framelayout 버튼 누를시 화면전환
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <LinearLayout
+            android:id="@+id/notice"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/notice">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,7 +109,7 @@
 
                 <ImageView
                     android:id="@+id/imageView1"
-                    android:layout_width="131dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/berry"
@@ -115,19 +119,26 @@
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="30dp"
                     android:text="케이크"
                     android:textSize="24sp" />
 
                 <Spinner
                     android:id="@+id/countSpinner4"
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="20dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
 
                 </Spinner>
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
 
@@ -139,11 +150,10 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="130dp"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
                     android:src="@drawable/ma"
                     android:visibility="visible" />
 
@@ -151,19 +161,26 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="30dp"
                     android:text="마카롱"
                     android:textSize="24sp" />
 
                 <Spinner
                     android:id="@+id/countSpinner5"
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="20dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
 
                 </Spinner>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="numberDecimal" />
 
             </LinearLayout>
 
@@ -176,40 +193,56 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="131dp"
+                    android:layout_width="125dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
-                    android:visibility="visible"
-                    android:src="@drawable/butter" />
+                    android:src="@drawable/butter"
+                    android:visibility="visible" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="30dp"
                     android:text="스콘"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:layout_marginLeft="10dp"/>
 
                 <Spinner
                     android:id="@+id/countSpinner6"
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp">
+                    android:layout_marginLeft="20dp">
 
                 </Spinner>
 
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="numberDecimal" />
+
+
             </LinearLayout>
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/cartButton"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:text="메뉴 담기"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+                android:textStyle="bold" />
 
-        //fragment로 화면전환
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/fragment">
-        </RelativeLayout>
+
+        </LinearLayout>
+        </ScrollView>
 
     </FrameLayout>
 

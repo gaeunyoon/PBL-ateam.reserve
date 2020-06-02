@@ -9,6 +9,14 @@
         android:label="Registeration"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".ReserveActivity"></activity>
+        <activity android:name=".NonCoffeeActivity" />
+        <activity android:name=".DessertActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".Sit" />
+        <activity android:name=".CoffeeActivity" />
+
         <activity android:name=".Splashscreen"
             android:label="A RESEVE">
             <intent-filter>

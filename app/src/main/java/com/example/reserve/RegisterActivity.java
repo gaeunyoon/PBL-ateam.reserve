@@ -24,6 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String userPhoneNumber;
     private AlertDialog dialog;
     private boolean validate=false;
+    private Button CoffeeButton;
 
 
     @Override

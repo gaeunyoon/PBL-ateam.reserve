@@ -18,6 +18,8 @@
     <string-array name="countSpinner4">
         <item>딸기케이크</item>
         <item>치즈케이크</item>
+        <item>밀크레이프</item>
+        <item>초코케이크</item>
     </string-array>
 
     <string-array name="countSpinner5">
@@ -29,5 +31,6 @@
     <string-array name="countSpinner6">
         <item>앙버터스콘</item>
         <item>말차스콘</item>
+        <item>플레인스콘</item>
     </string-array>
 </resources>
