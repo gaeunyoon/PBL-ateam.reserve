@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.reserve">
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -10,15 +9,15 @@
         android:label="Registeration"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".srActivity"></activity>
-        <activity android:name=".ReserveActivity" />
-        <activity android:name=".NoncoffeeActivity" />
-        <activity android:name=".DesertActivity" />
-        <activity android:name=".Menu1Activity" />
+
+        <activity android:name=".ReserveActivity"></activity>
+        <activity android:name=".NonCoffeeActivity" />
+        <activity android:name=".DessertActivity" />
+        <activity android:name=".MenuActivity" />
         <activity android:name=".Sit" />
         <activity android:name=".CoffeeActivity" />
-        <activity
-            android:name=".Splashscreen"
+
+        <activity android:name=".Splashscreen"
             android:label="A RESEVE">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,8 +33,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity" />
+
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
