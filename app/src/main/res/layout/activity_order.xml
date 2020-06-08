@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".OrderActivity"
+    android:orientation="vertical">
+
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -56,8 +58,9 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"/>
 
-</LinearLayout>
-//framelayout은 버튼 누를시 화면전환 (linear에서 relative, 즉 해당 fragment로전환)
+    </LinearLayout>
+
+    //framelayout 버튼 누를시 화면전환
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -88,33 +91,69 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="공지사항"
+                    android:text="주문 내역"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
-            //공지사항에 나올 ListView작성
-            <ListView
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/noticeListView"
-                android:layout_margin="10dp"
-                android:dividerHeight="10dp"
-                android:divider="#ffffff">
+                android:layout_height="435dp" >
 
-            </ListView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="메뉴" />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="TextView" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
 
         </LinearLayout>
+
 
         //fragment로 화면전환
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragment">
+
         </RelativeLayout>
 
     </FrameLayout>
 
-    </LinearLayout>
+
+
+
+</LinearLayout>

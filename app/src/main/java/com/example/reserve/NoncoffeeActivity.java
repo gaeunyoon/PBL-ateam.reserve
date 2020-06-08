@@ -1,25 +1,25 @@
-package com.example.reserve;
 
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.reserve;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NoncoffeeActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class NonCoffeeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_noncoffee);
+        setContentView(R.layout.activity_nonmenu);
 
-        Button pushButton = (Button) findViewById(R.id.pushbutton);
-
-        pushButton.setOnClickListener(new View.OnClickListener() {
+        Button cartbutton = (Button) findViewById(R.id.cartButton);
+        cartbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),srActivity.class );
+                Intent intent=new Intent(getApplicationContext(), Statistic.class);
 
                 startActivity(intent);
             }

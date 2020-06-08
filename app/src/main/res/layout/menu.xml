@@ -47,7 +47,7 @@ tools:context=".CoffeeActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:id="@+id/statisticButton"
+        android:id="@+id/orderButton"
         android:text="주문 내역"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
@@ -116,7 +116,7 @@ tools:context=".CoffeeActivity">
                 android:visibility="visible" />
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -131,7 +131,7 @@ tools:context=".CoffeeActivity">
 
             </Spinner>
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/editText11"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

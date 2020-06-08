@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".StatisticActivity">
+    tools:context=".Statistic">
 
     <LinearLayout
 
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/statisticButton"
+            android:id="@+id/orderButton"
             android:text="주문 내역"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
@@ -96,6 +96,46 @@
 
             </LinearLayout>
 
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="435dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="메뉴" />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="TextView" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
 
 
         </LinearLayout>
@@ -106,6 +146,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragment">
+
         </RelativeLayout>
 
     </FrameLayout>

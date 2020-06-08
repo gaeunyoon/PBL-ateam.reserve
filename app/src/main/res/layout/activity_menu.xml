@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/statisticButton"
+            android:id="@+id/orderButton"
             android:text="주문 내역"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
