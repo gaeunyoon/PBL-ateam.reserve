@@ -18,7 +18,6 @@ public class CoffeeActivity extends AppCompatActivity {
     }
 
 
-    String num1, num2;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,10 +54,11 @@ public class CoffeeActivity extends AppCompatActivity {
         });
 
 
-        EditText num1 =(EditText)findViewById(R.id.editText11);
-        TextView menu1 = (TextView)findViewById(R.id.textView11);
-        TextView menu2 = (TextView)findViewById(R.id.text1);
-        TextView menu3 = (TextView)findViewById(R.id.text2);
+
+
+
+
+        final EditText editText11 = (EditText)findViewById(R.id.editText11);
         Button cartbutton = (Button) findViewById(R.id.cartButton);
 
         cartbutton.setOnClickListener(new View.OnClickListener() {
@@ -67,11 +67,13 @@ public class CoffeeActivity extends AppCompatActivity {
                 Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
 
 
-
                 startActivityForResult(intent, 1 );
 
 
+
             }
+
+
         });
 
     }

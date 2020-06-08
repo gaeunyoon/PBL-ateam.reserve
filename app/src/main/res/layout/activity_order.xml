@@ -118,7 +118,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:text="메뉴" />
+                            android:text=" COFFEE " />
 
                         <TextView
                             android:id="@+id/text2"
@@ -126,7 +126,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:text="TextView" />
+                            android:text=" " />
 
                         <TextView
                             android:id="@+id/text3"
@@ -134,7 +134,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:text="TextView" />
+                            android:text=" " />
                     </LinearLayout>
                 </LinearLayout>
             </ScrollView>

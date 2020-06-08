@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         final Button menuButton = (Button) findViewById(R.id.menuButton);
         final Button orderButton = (Button) findViewById(R.id.orderButton);
 
-
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
 
 
