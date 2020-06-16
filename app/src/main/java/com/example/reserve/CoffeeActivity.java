@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.List;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
-import static com.example.reserve.MainActivity.userID;
+
 
 public class CoffeeActivity extends AppCompatActivity {
     private ListView statisticListView;
