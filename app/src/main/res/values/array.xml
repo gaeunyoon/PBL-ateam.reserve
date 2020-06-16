@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="countSpinner1">
+
+
+    <string-array name="countSpinner6">
         <item>Hot</item>
         <item>Ice</item>
     </string-array>
 
-    <string-array name="countSpinner2">
-        <item>Hot</item>
-        <item>Ice</item>
-    </string-array>
-
-    <string-array name="countSpinner3">
-        <item>Hot</item>
-        <item>Ice</item>
-    </string-array>
-
-    <string-array name="countSpinner4">
+    <string-array name="countSpinner7">
         <item>딸기케이크</item>
         <item>치즈케이크</item>
         <item>밀크레이프</item>
         <item>초코케이크</item>
     </string-array>
 
-    <string-array name="countSpinner5">
+    <string-array name="countSpinner8">
         <item>초코마카롱</item>
         <item>딸기마카롱</item>
         <item>말차마카롱</item>
     </string-array>
 
-    <string-array name="countSpinner6">
+    <string-array name="countSpinner9">
         <item>앙버터스콘</item>
         <item>말차스콘</item>
         <item>플레인스콘</item>

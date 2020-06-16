@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".NonCoffeeActivity">
+    tools:context=".NoncoffeeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,14 +74,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="224dp"
+                android:layout_height="220dp"
                 android:layout_marginTop="8dp"
                 android:background="#ff99"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="194dp"
-                    android:layout_height="153dp"
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:scaleType="center"
@@ -92,9 +92,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:text="NON-COFFEE"
                     android:textColor="#ffffff"
-                    android:textSize="25dp"
+                    android:textSize="23dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -122,18 +123,12 @@
                     android:text="흑당라떼"
                     android:textSize="24sp" />
 
-                <Spinner
-                    android:id="@+id/countSpinner1"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                </Spinner>
 
                 <EditText
                     android:id="@+id/editText1"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:inputType="numberDecimal" />
 
@@ -151,7 +146,7 @@
                     android:layout_width="131dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/straw"
+                    android:src="@drawable/berry"
                     android:visibility="visible" />
 
                 <TextView
@@ -162,18 +157,13 @@
                     android:text="딸기라떼"
                     android:textSize="24sp" />
 
-                <Spinner
-                    android:id="@+id/countSpinner2"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
 
-                </Spinner>
 
                 <EditText
                     android:id="@+id/editText2"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:inputType="numberDecimal" />
 
@@ -190,31 +180,25 @@
                     android:layout_width="135dp"
                     android:layout_height="match_parent"
                     android:visibility="visible"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/milk" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="30dp"
                     android:text="밀크티"
                     android:textSize="24sp" />
 
-                <Spinner
-                    android:id="@+id/countSpinner3"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp">
 
-                </Spinner>
 
                 <EditText
                     android:id="@+id/editText3"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -229,6 +213,7 @@
                     android:id="@+id/imageView4"
                     android:layout_width="135dp"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
                     android:visibility="visible"
                     android:src="@drawable/tea" />
 
@@ -236,25 +221,17 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="30dp"
                     android:text="자몽티"
                     android:textSize="24sp" />
 
-                <Spinner
-                    android:id="@+id/countSpinner4"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp">
-
-                </Spinner>
 
                 <EditText
                     android:id="@+id/editText4"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -269,6 +246,7 @@
                     android:id="@+id/imageView5"
                     android:layout_width="135dp"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
                     android:visibility="visible"
                     android:src="@drawable/choco" />
 
@@ -280,19 +258,13 @@
                     android:text="초코라떼"
                     android:textSize="24sp" />
 
-                <Spinner
-                    android:id="@+id/countSpinner5"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                </Spinner>
 
                 <EditText
                     android:id="@+id/editText5"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
                     android:inputType="numberDecimal" />
 
             </LinearLayout>
@@ -306,6 +278,7 @@
                 android:text="메뉴 담기"
                 android:textColor="#000"
                 android:textSize="20dp"
+                android:layout_marginTop="10dp"
                 android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
                 android:textStyle="bold" />
 

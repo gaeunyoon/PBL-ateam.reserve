@@ -12,8 +12,10 @@ public class MenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
         final Button reserveButton=(Button) findViewById(R.id.reserveButton);
         final Button menuButton=(Button) findViewById(R.id.menuButton);
         final Button statisticButton=(Button) findViewById(R.id.statisticButton);
@@ -45,7 +47,7 @@ public class MenuActivity extends AppCompatActivity {
         NonCoffeeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),NonCoffeeActivity.class );
+                Intent intent = new Intent(getApplicationContext(),NoncoffeeActivity.class );
 
                 startActivity(intent);
             }
@@ -69,10 +71,13 @@ public class MenuActivity extends AppCompatActivity {
         statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(getApplicationContext(),Statistic.class);
+                Intent intent=new Intent(getApplicationContext(),StatisticActivity.class);
                 startActivity(intent);
             }
         });
 
     }
+
+
+
 }
