@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/reserveButton"
+            android:id="@+id/stampButton"
             android:text="자리예약"
             android:textStyle="bold"
             android:textColor="#FFFFFF"

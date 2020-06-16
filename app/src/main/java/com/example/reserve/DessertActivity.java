@@ -18,7 +18,7 @@ public class DessertActivity extends AppCompatActivity {
         cartbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), Statistic.class);
+                Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
 
                 startActivity(intent);
             }

@@ -10,7 +10,8 @@
         android:label="Registeration"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".OrderActivity"></activity>
+        <activity android:name=".StampActivity"></activity>
+        <activity android:name=".OrderActivity" />
         <activity android:name=".ReserveActivity" />
         <activity android:name=".NonCoffeeActivity" />
         <activity android:name=".DessertActivity" />

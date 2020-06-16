@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class CoffeeActivity extends AppCompatActivity {
 
 
-    public CoffeeActivity() {
-        // Required empty public constructor
-    }
 
+    public static final int REQUEST_CODE = 1;
+    public static final String AA = "number";
+    private EditText editText11;
 
 
     @Override
@@ -28,6 +28,8 @@ public class CoffeeActivity extends AppCompatActivity {
         final Button reserveButton = (Button) findViewById(R.id.reserveButton);
         final Button menuButton = (Button) findViewById(R.id.menuButton);
         final Button orderButton = (Button) findViewById(R.id.orderButton);
+        final EditText editText11 = (EditText) findViewById(R.id.editText11);
+
 
 
         menuButton.setOnClickListener(new View.OnClickListener() {
@@ -58,24 +60,37 @@ public class CoffeeActivity extends AppCompatActivity {
 
 
 
-        final EditText editText11 = (EditText)findViewById(R.id.editText11);
+
+
         Button cartbutton = (Button) findViewById(R.id.cartButton);
 
         cartbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
 
+                Intent intent=new Intent(CoffeeActivity.this, OrderActivity.class);
 
-                startActivityForResult(intent, 1 );
-
-
-
+                String aa = editText11.getText().toString();
+                editText11.setText("");
+                intent.putExtra(AA,aa);
+                startActivityForResult(intent, REQUEST_CODE);
             }
 
 
         });
 
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        super.onActivityResult(requestCode, resultCode, data);
+        String aa = data.getStringExtra(AA);
+        editText11.setText(aa);
+    }
+
+
+
+
+
 
 }
