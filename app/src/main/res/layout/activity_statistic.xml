@@ -52,7 +52,7 @@
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:background="#ff99"
+            android:background="@color/colorPrimaryDark"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"/>
 

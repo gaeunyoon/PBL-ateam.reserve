@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 
 public class Sit extends AppCompatActivity {
@@ -58,6 +60,9 @@ public class Sit extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ReserveActivity.class );
                 startActivity(intent);
+                FragmentManager fragmentManager=getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.commit();
                 imageButton20.setBackgroundColor(getResources().getColor(R.color.colorDark));
                 imageButton21.setBackgroundColor(getResources().getColor(R.color.colorGray));
                 imageButton22.setBackgroundColor(getResources().getColor(R.color.colorGray));

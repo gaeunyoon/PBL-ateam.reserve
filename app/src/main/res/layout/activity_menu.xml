@@ -24,7 +24,7 @@
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:background="#ff99"
+            android:background="@color/colorPrimaryDark"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"/>
 
@@ -128,7 +128,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="#ff99"
-                android:text="Noncoffee"
+                android:text="NonCoffee"
                 android:textColor="#ffffff"
                 android:textSize="20dp"
                 android:textStyle="bold" />
