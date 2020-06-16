@@ -1,15 +1,15 @@
 package com.example.reserve;
 
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -28,15 +28,12 @@ public class MainActivity extends AppCompatActivity {
     private ListView noticeListView;
     private NoticeListAdapter adapter;
     private List<Notice> noticeList;
-    public static String userID;
 
 
     @Override
     protected void onCreate(Bundle savedinstanceState){
         super.onCreate(savedinstanceState);
         setContentView(R.layout.activity_main);
-
-        userID=getIntent().getStringExtra("userID");
 
         noticeListView=(ListView) findViewById(R.id.noticeListView);
         noticeList=new ArrayList<Notice>();
@@ -60,26 +57,42 @@ public class MainActivity extends AppCompatActivity {
         menuButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(getApplicationContext(), MenuActivity.class);
-
-                startActivity(intent);
+                notice.setVisibility(View.GONE); //공지사항 linearlayout 이 해당 fragment로 보이게 화면전환
+                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));//menu 버튼만 어두운색으로
+                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                FragmentManager fragmentManager=getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment, new MenuFragment());
+                fragmentTransaction.commit();
             }
         });
         reserveButton.setOnClickListener(new View.OnClickListener(){//자리예약화면으로 전환
             @Override
             public void onClick(View view){
-               Intent intent=new Intent(getApplicationContext(),Sit.class);
-                startActivity(intent);
+                notice.setVisibility(View.GONE);
+                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));//reserve 버튼만 어두운색으로
+                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                FragmentManager fragmentManager=getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment, new ReserveFragment());
+                fragmentTransaction.commit();
             }
         });
         statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(getApplicationContext(),Statistic.class);
-                startActivity(intent);
+                notice.setVisibility(View.GONE);
+                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));//statistic 버튼만 어두운색으로
+                FragmentManager fragmentManager=getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment, new StatisticFragment());
+                fragmentTransaction.commit();
             }
         });
-
         new BackgroundTask().execute();
 
     }
@@ -141,18 +154,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    private long lastTimeBackPressed;
-    //뒤로가기 버튼 두번 눌렀을때 앱 종료
-    @Override
-    public void onBackPressed(){
-        //한번 버튼 누른 후 1.5초 이내로 한번 더 누르면 종료
-        if(System.currentTimeMillis()-lastTimeBackPressed<1500)
-        {
-            finish();
-            return;
-        }
-        Toast.makeText(this, "Good Bye",Toast.LENGTH_SHORT);
-        lastTimeBackPressed=System.currentTimeMillis();
-    }
-
 }

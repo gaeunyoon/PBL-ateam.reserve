@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".ReserveActivity">
+    tools:context=".Sit">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,10 +58,6 @@
             android:layout_marginTop="8dp"/>
 
     </LinearLayout>
-    //framelayout 버튼 누를시 화면전환
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
 
         <LinearLayout
@@ -71,14 +68,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="224dp"
+                android:layout_height="220dp"
                 android:layout_marginTop="8dp"
                 android:background="#ff99"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="194dp"
-                    android:layout_height="153dp"
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:scaleType="center"
@@ -89,9 +86,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:text="자리예약"
                     android:textColor="#ffffff"
-                    android:textSize="25dp"
+                    android:textSize="23dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -366,16 +364,5 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-        //fragment로 화면전환
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/fragment">
-        </RelativeLayout>
-
-    </FrameLayout>
-
 
 </LinearLayout>
