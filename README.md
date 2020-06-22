@@ -274,6 +274,7 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 #### 1.회원가입
 
 #### ● RegisterActivity.java
+
 ![image](https://user-images.githubusercontent.com/62562198/85271969-7cdb0f00-b4b6-11ea-86f1-8c208ee57735.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272326-fffc6500-b4b6-11ea-9a2b-57b4c58df73e.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272504-36d27b00-b4b7-11ea-8bb6-626055166b6f.png)
@@ -283,17 +284,21 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 
 #### ● RegisterRequest.java
+
 ![image](https://user-images.githubusercontent.com/62562198/85272647-697c7380-b4b7-11ea-8661-5b08c03621bf.png)
 
 
 
 
 ###### <아이디 중복 체크>
+
 #### ● ValidateRequest.java
 
 
 ###### <회원가입 layout>
+
 #### ● activity_register.xml
+
 
 
 
@@ -343,7 +348,7 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 
 
-###5. 메뉴 화면
+### 5. 메뉴 화면
 #### ● MenuActivity.java
 
 
