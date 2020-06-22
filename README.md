@@ -263,6 +263,19 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 그리고 STATISTIC 테이블은 메인 화면 상단에 위치한 메뉴 버튼을 클릭하면 이동하게 되는 메뉴화면에서 주문한 메뉴를 저장하는 테이블로, 각각의 카테고리에서 메뉴를 선택하고 해당 메뉴의 수량을 입력하고 cart버튼을 클릭하면 입력받은 정보들이 이 테이블에 저장됩니다. 또한 이 테이블은 cart버튼을 클릭하였을 때와 메인 화면의 상단에 주문 내역 버튼을 클릭하였을 때 이동하는 주문 내용을 보여주는 주문 내역 화면에서 보여줄 정보의 테이블이기도 합니다.
 
 ---
+ ### Ⅱ-3. 기술 구현
+
+#### 1.회원가입
+
+##### ● RegisterActivity.java
+![image](https://user-images.githubusercontent.com/62562198/85271969-7cdb0f00-b4b6-11ea-86f1-8c208ee57735.png)
+![image](https://user-images.githubusercontent.com/62562198/85272326-fffc6500-b4b6-11ea-9a2b-57b4c58df73e.png)
+![image](https://user-images.githubusercontent.com/62562198/85272504-36d27b00-b4b7-11ea-8bb6-626055166b6f.png)
+![image](https://user-images.githubusercontent.com/62562198/85272583-536eb300-b4b7-11ea-979f-e9cd10c8a920.png)
 
 
+##### ● RegisterRequest.java
+![image](https://user-images.githubusercontent.com/62562198/85272647-697c7380-b4b7-11ea-8661-5b08c03621bf.png)
 
+###### <아이디 중복 체크>
+##### ● ValidateRequest.java
