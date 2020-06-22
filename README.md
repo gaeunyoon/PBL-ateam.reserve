@@ -262,20 +262,147 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
  그리고 NOTICE 테이블은 관리자가 로그인 후에 사용자들에게 전달하고자 하는 정보를 입력받아 메인 화면의 공지사항란에 나오게 하는데 이때 공지사항란에 보이는 정보와 공지사항을 쓴 사용자의 ID를 이곳에 저장하기 위해 생성되는 테이블입니다. 
 그리고 STATISTIC 테이블은 메인 화면 상단에 위치한 메뉴 버튼을 클릭하면 이동하게 되는 메뉴화면에서 주문한 메뉴를 저장하는 테이블로, 각각의 카테고리에서 메뉴를 선택하고 해당 메뉴의 수량을 입력하고 cart버튼을 클릭하면 입력받은 정보들이 이 테이블에 저장됩니다. 또한 이 테이블은 cart버튼을 클릭하였을 때와 메인 화면의 상단에 주문 내역 버튼을 클릭하였을 때 이동하는 주문 내용을 보여주는 주문 내역 화면에서 보여줄 정보의 테이블이기도 합니다.
 
+
+
 ---
+
+
+
+
  ### Ⅱ-3. 기술 구현
 
 #### 1.회원가입
 
-##### ● RegisterActivity.java
+#### ● RegisterActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85271969-7cdb0f00-b4b6-11ea-86f1-8c208ee57735.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272326-fffc6500-b4b6-11ea-9a2b-57b4c58df73e.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272504-36d27b00-b4b7-11ea-8bb6-626055166b6f.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272583-536eb300-b4b7-11ea-979f-e9cd10c8a920.png)
 
 
-##### ● RegisterRequest.java
+
+
+#### ● RegisterRequest.java
 ![image](https://user-images.githubusercontent.com/62562198/85272647-697c7380-b4b7-11ea-8661-5b08c03621bf.png)
 
+
+
+
 ###### <아이디 중복 체크>
-##### ● ValidateRequest.java
+#### ● ValidateRequest.java
+
+
+###### <회원가입 layout>
+#### ● activity_register.xml
+
+
+
+#### 2. 로그인
+#### ● LoginActivity.java
+![image](https://user-images.githubusercontent.com/62562198/85270674-a2ffaf80-b4b4-11ea-8229-0077e8356ad7.png)
+![image](https://user-images.githubusercontent.com/62562198/85270865-ece89580-b4b4-11ea-97be-c1aac96a1abf.png)
+
+
+
+
+#### ● LoginRequest.java
+![image](https://user-images.githubusercontent.com/62562198/85270937-0853a080-b4b5-11ea-8518-17fce33d304b.png)
+
+
+##### <로그인 layout>
+#### ● activity_login.xml
+
+
+### 3. 메인 화면
+#### ● MainActivity.java
+
+
+##### <메인 layout>
+#### ● activity_main.xml
+
+
+
+
+### 4. 공지사항
+##### -메인 화면에 들어갈 공지사항 List
+
+#### ● Notice.java
+
+
+#### ● NoticeListAdapter.java
+
+
+
+##### <공지사항 layout>
+#### ● notice.xml
+
+
+
+
+
+
+
+
+###5. 메뉴 화면
+#### ● MenuActivity.java
+
+
+
+##### <메뉴 layout>
+#### ● activity_menu.xml
+
+### 6. Coffee 화면
+#### ● CoffeeActivity.java
+
+##### <Coffee layout>
+#### ● menu.xml
+ 
+ 
+###  7. Non-Coffee 화면
+#### ● NoncoffeeActivity.java
+
+
+##### <Non-Coffee layout>
+#### ● activity_nonmenu.xml
+ 
+ 
+ 
+### 8. Dessert 화면
+#### ● DessertActivity.java
+
+
+
+##### <Dessert layout>
+ #### ● activity_desertmenu.xml
+ 
+ 
+### 9. 자리예약 화면
+#### ● Sit.java
+
+
+##### <자리예약 layout>
+#### ● activity_sit.xml
+
+
+### 10. 주문 내역 화면
+#### ● MainActivity.java
+
+##### <메인 layout>
+#### ● activity_main.xml
+
+### 11. 실행 화면
+#### ● Splashscreen.java
+
+
+##### <실행 화면 layout>
+#### ● activity_splashscreen.xml
+
+#### ● AndroidManifest.xml
+
+## Ⅱ-4. 결과 실행
+ 
+
+
+
+
+
