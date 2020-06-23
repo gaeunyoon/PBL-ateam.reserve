@@ -425,10 +425,27 @@ menuButton으로 , 아이디가 statisticButton인 Button을 statisticButton으�
 ##### -메인 화면에 들어갈 공지사항 List
 
 #### ● Notice.java
+
 ![image](https://user-images.githubusercontent.com/62562198/85355328-5add9d00-b547-11ea-867b-317b845d79c9.png)
 
+-Notice클래스는 공지사항에 들어갈 List를 생성자를 생성하고 입력값을 할당하는 클래스입니다.
+
+-공지사항에 들어갈 notice, name, date 매개변수를 선업힙니다.
+
+-그리고 Notice이라는 생성자를 생성하여 매개변수 notice, name, date를 사용합니다.
+getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은 name을 name으로 ,
+입력받은 date를 date로 할당합니다.
+
+
 #### ● NoticeListAdapter.java
+
 ![image](https://user-images.githubusercontent.com/62562198/85355421-82cd0080-b547-11ea-8a20-fecd4c34f6cc.png)
+
+-
+
+-매개변수 context, noticList를 선언합니다.
+
+-
 
 ##### <공지사항 layout>
 #### ● notice.xml
