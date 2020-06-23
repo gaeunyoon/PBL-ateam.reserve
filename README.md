@@ -283,13 +283,14 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 -아이디를 입력하고 validateButton을 클릭하면 데이터베이스에 저장되어 있는 userID와 일치하지 않으면 "사용할 수 있는 아이디입니다."라는
   메세지가 나옵니다. 그리고 데이터베이스 저장되어 있는 userID와 일치하면 "사용할 수 없는 아이디입니다."라는 메세지가 나옵니다.
 
--아이디 중복체크 버튼을 누르면 버튼의 색과 idText찬의 색이 colorGray로 바뀝니다.
+-아이디 중복체크 버튼을 누르면 버튼의 색과 idText칸의 색이 colorGray로 바뀝니다.
 
--아이디를 입력하고아이디 중복체크 버튼을 누르고 "사용할 수 있는 버튼입니다"라는 메세지가 나오면 버튼의 색과 idText창의 색이 colorGray로 바뀝니다.
+-아이디를 입력하고아이디 중복체크 버튼을 누르고 "사용할 수 있는 아이디입니다"라는 메세지가 나오면 버튼의 색과 idText창의 색이 
+colorGray로 바뀝니다.
 
 -regiseterButton은 회원가입창에 정보를 입력한 루 누르는 회원가입 버튼입니다.
 
--regiseterButton은 회원가입창에 정보를 입력한 후 회원가입 버튼을 누르는데 그러면 입력한 정보들이 데이터베이스에 저장 됩니다.
+-regiseterButton은 회원가입창에 정보를 입력한 후 회원가입 버튼을 누르면 입력한 정보들이 데이터베이스에 저장 됩니다.
 
 -regiseterButton을 눌렀을 때 아이디 중복체크 버튼을 누르지 않으면 "먼저 중복체크를 해주세요"라는 메세지가 나옵니다.
 -정보를 입력하고 regiseterButton을 눌렀을 때 아이디 중복체크 버튼을 누르지 않으면 "먼저 중복체크를 해주세요"라는 메세지가 나옵니다.
@@ -368,40 +369,45 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ![image](https://user-images.githubusercontent.com/62562198/85355546-d2133100-b547-11ea-977e-0cfdcb76de93.png)
 
 
-### 5. Coffee 화면
 #### ● CoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355641-0c7cce00-b548-11ea-8c06-61ed0597ce01.png)
  
  
-###  6. Non-Coffee 화면
 #### ● NoncoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355707-2e765080-b548-11ea-8eb4-8f938dff8d60.png)
 
 
-### 7. Dessert 화면
 #### ● DessertActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355744-45b53e00-b548-11ea-8656-0301d86a1a74.png)
  
  
-### 8. 자리예약 화면
+### 5. 자리예약 화면
 #### ● Sit.java
 ![image](https://user-images.githubusercontent.com/62562198/85355799-641b3980-b548-11ea-9123-9a2bdb3d902d.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355871-80b77180-b548-11ea-9bce-d7a4c34825eb.png)
 
 
-### 9. 주문 내역 화면
-#### ● MainActivity.java
+### 6. 주문 내역 화면
+#### ● Order.java
+![image](https://user-images.githubusercontent.com/62562198/85359245-ad6f8700-b550-11ea-88c8-3a781090c98f.png)
+#### ● OrderActivity.java
+![image](https://user-images.githubusercontent.com/62562198/85359418-22db5780-b551-11ea-8e38-a8980c30618a.png)
+![image](https://user-images.githubusercontent.com/62562198/85359437-37b7eb00-b551-11ea-9c5e-97bf9190d154.png)
+![image](https://user-images.githubusercontent.com/62562198/85359463-4a322480-b551-11ea-8b52-16da2ead8c0f.png)
 
+#### ● OrderListAdapter.java
+![image](https://user-images.githubusercontent.com/62562198/85359364-fb848a80-b550-11ea-8e78-ba29943e8d5f.png)
 
-### 10. 실행 화면
+### 7. 실행 화면
 #### ● Splashscreen.java
 ![image](https://user-images.githubusercontent.com/62562198/85355962-ae9cb600-b548-11ea-97e9-092805dd4366.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355983-bcead200-b548-11ea-8108-29affe109daa.png)
 
 
-
 #### ● AndroidManifest.xml
 ![image](https://user-images.githubusercontent.com/62562198/85356028-e0158180-b548-11ea-9bee-14c2456b0622.png)
+
+
 
 ## Ⅱ-4. 결과 실행
  
