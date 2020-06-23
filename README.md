@@ -283,9 +283,10 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 -아이디를 입력하고 validateButton을 클릭하면 데이터베이스에 저장되어 있는 userID와 일치하지 않으면 "사용할 수 있는 아이디입니다."라는
   메세지가 나옵니다. 그리고 데이터베이스 저장되어 있는 userID와 일치하면 "사용할 수 없는 아이디입니다."라는 메세지가 나옵니다.
 
--아이디 중복체크 버튼을 누르면 버튼의 색과 idText찬의 색이 colorGray로 바뀝니다.
+-아이디 중복체크 버튼을 누르면 버튼의 색과 idText칸의 색이 colorGray로 바뀝니다.
 
--아이디를 입력하고아이디 중복체크 버튼을 누르고 "사용할 수 있는 버튼입니다"라는 메세지가 나오면 버튼의 색과 idText창의 색이 colorGray로 바뀝니다.
+-아이디를 입력하고아이디 중복체크 버튼을 누르고 "사용할 수 있는 버튼입니다"라는 메세지가 나오면 버튼의 색과 idText창의 색이 
+colorGray로 바뀝니다.
 
 -regiseterButton은 회원가입창에 정보를 입력한 루 누르는 회원가입 버튼입니다.
 
@@ -300,9 +301,10 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 -그리고 모든 조건을 만족하고 regiseterButton을 누르면 "회원등록에 성공했습니다."라는 메세지가 나오고 만족하지 못하면 
    "회원등록에 실패하였습니다"라는 메세지가 나옵니다.
    
--그리고 아이디의 중복체크버튼을 눌렀을 때 "사용가능한 아이디입니다"라는 메세지가 나오고 빈칸없이 모든 창에 정보를 입력하고 regiseterButton을 누르  면 "회원등록에 성공했습니다."라는 메세지가 나오고 만족하지 못하면 "회원등록에 실패하였습니다"라는 메세지가 나옵니다.
+-그리고 아이디의 중복체크버튼을 눌렀을 때 "사용가능한 아이디입니다"라는 메세지가 나오고 빈칸없이 모든 창에 정보를 입력하고 
+regiseterButton을 누르면 "회원등록에 성공했습니다."라는 메세지가 나오고 만족하지 못하면 "회원등록에 실패하였습니다"라는 메세지가 나옵니다.
 
- -모든 과정이 끝나면 onStop메소드를 통해서 RegisterActivity에서 나오게 됩니다.
+-모든 과정이 끝나면 onStop메소드를 통해서 RegisterActivity에서 나오게 됩니다.
 
 
 #### ● RegisterRequest.java
@@ -324,8 +326,8 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 -자신의 도메인과 UserValidate.php를입력합니다. 이 UserValidate.php는 아이디 중복체크를 위한 php파일입니다.
 
--안드로이드 스튜디오에서 실행한 어플에서 입력한 아이디가 데이터베이스에 userID값이 있는지 확인하기 위해서 PHP파일이 안드로이드 스튜디오
-와 데이터베이스를 연결 시켜줍니다.
+-안드로이드 스튜디오에서 실행한 어플에서 입력한 아이디가 데이터베이스에 userID값이 있는지 확인하기 위해서 PHP파일이 
+안드로이드 스튜디오와 데이터베이스를 연결 시켜줍니다.
 
 -userID가 입력되면 parameters에 입력됩니다.
 
@@ -342,8 +344,8 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
  
 -안드로이드 스튜디오에서 실행한 어플인 로그인 창에서 입력받은 아이디는 idText, 비밀번호는 passwordText로 할당합니다.
 
--loginButton을 눌렀을 때 데이터 베이스에 있는 값과 일치하는 성공값에서는 "로그인에 성공했습니다."라는 메세지가 나옵니다. 이때 이 메세지와 함께
- 로그인에 성공하게 되면 MainActivity로 화면이 이동하게 됩니다.
+-loginButton을 눌렀을 때 데이터 베이스에 있는 값과 일치하는 성공값에서는 "로그인에 성공했습니다."라는 메세지가 나옵니다. 
+이때 이 메세지와 함께 로그인에 성공하게 되면 MainActivity로 화면이 이동하게 됩니다.
  
  -loginButton을 눌렀을 때 데이터 베이스에 있는 값과 일치하지 않는 경우에는 "계정을 다시 확인하세요"라는 메세지와 함께 "다시시도"라는
  버튼이 나오게 됩니다.
@@ -357,12 +359,12 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 #### ● LoginRequest.java
 ![image](https://user-images.githubusercontent.com/62562198/85270937-0853a080-b4b5-11ea-8518-17fce33d304b.png)
 
-
 -자신의 도메인과 UserLogin.php를입력합니다.
 
 -여기서 UserLogin.php는 안드로이드 스튜디오로 실행한 어플에서 입력한 정보를 데이터 베이스와 연결해 줍니다.
 
--안드로이드 스튜디오에서 입력한 정보를 UserLogin.php파일을 통해서 아이디는 userID, 비밀번호는 userPassword로 할당하여 데이터베이스에 저장합니다.
+-안드로이드 스튜디오에서 입력한 정보를 UserLogin.php파일을 통해서 아이디는 userID, 비밀번호는 userPassword로 할당하여 데이터베이스에 
+저장합니다.
 
 
 
@@ -382,9 +384,7 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 -adapter에 공지사항에 해당하는 noticelist를 넣어줍니다. 여기서 adapter에 들어갈 공지사항은 view형태로 보여줍니다.
 
--아이디가 notice인 LinearLayout을 notice로 , 아이디가 reserveButton인 Button을 reserveButton으로,
-아이디가 menuButton인 Button을 menuButton으로 , 아이디가 statisticButton인 Button을 
-statisticButton으로 선언합니다.
+-아이디가 notice인 LinearLayout을 notice로 , 아이디가 reserveButton인 Button을 reserveButton으로, 아이디가 menuButton인 Button을 menuButton으로 , 아이디가 statisticButton인 Button을 statisticButton으로 선언합니다.
 
 -menuButton을 클릭하였을 때 MenuActivity 클래스로 화면이 이동하도록 하고 MenuActivity를 시작합니다. 
 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 
@@ -392,8 +392,7 @@ statisticButton으로 선언합니다.
 
 -reserveButton을 클릭하였을 때 Sit 클래스로 화면이 이동하도록 하고 SitActivity를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
 
--statistcButton을 클릭하였을 때 StatisticActivity 클래스로 화면이 이동하도록 하고  StatisticActivity 를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 
-color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
+-statistcButton을 클릭하였을 때 StatisticActivity 클래스로 화면이 이동하도록 하고  StatisticActivity 를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
 
 -우선 target을 선언하고 target에 해당하는 공지사항 데이터베이스와 연결해주기 위해서 자신의 도메인과 
 안드로이드스튜디오와 데이터베이스를 연결해줄 NoticeList.php를 입력해서 해당 데이터베이스와 연결 시켜줍니다.
@@ -425,8 +424,7 @@ color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
 -공지사항에 들어갈 notice, name, date 매개변수를 선업힙니다.
 
 -그리고 Notice이라는 생성자를 생성하여 매개변수 notice, name, date를 사용합니다.
-getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은 name을 name으로 ,
-입력받은 date를 date로 할당합니다.
+getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은 name을 name으로 , 입력받은 date를 date로 할당합니다.
 
 
 #### ● NoticeListAdapter.java
@@ -467,7 +465,7 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 -menuButton을 클릭하였을 때, 화면에 coffeeButton, DesertButton, NoncoffeeButton이 있습니다.
 이 버튼들을 통해서 메뉴의 카테고리 별로 분류해서 메뉴를 주문할 수 있도록 하였습니다.
 
--coffeeButton을 클릭하면 CoffeeActivity클래스로 화면이 이동하게 됩니다. 그리고 CoffeeActivity클래스를 시작합니다.
+-CoffeeButton을 클릭하면 CoffeeActivity클래스로 화면이 이동하게 됩니다. 그리고 CoffeeActivity클래스를 시작합니다.
 
 -DesertButton을 클릭하면 DesertActivity클래스로 화면이 이동하게 됩니다. 그리고 DesertActivity클래스를 시작합니다.
 
@@ -511,7 +509,8 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 -statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
 
--cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+-cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를
+시작합니다.
 
 #### ● DessertActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355744-45b53e00-b548-11ea-8656-0301d86a1a74.png)
@@ -530,7 +529,8 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 -statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
 
--cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+-cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를
+시작합니다.
 
 
  
@@ -597,8 +597,8 @@ view형태로 보여줍니다.
  
  -그리고 활동이 끝나면 연결을 끊어줍니다.
  
- -onProgressUpdate를 통해서 response에 주문내역 리스트를 넣어줍니다. 이 주문내역에는 주문번호, 
- 사용자아이디, 메뉴이름, 주문수량을 넣을 수 있습니다.
+ -onProgressUpdate를 통해서 response에 주문내역 리스트를 넣어줍니다. 이 주문내역에는 주문번호, 사용자아이디, 메뉴이름, 주문수량을 
+ 넣을 수 있습니다.
   
  -이때 카운트가 array크기보다 작을 때까지 현재 배열 원소값을 넣을 수 있도록 하고 
  userID, menuID, menuName, menuAmount 값을 가져와서 하나의 주문 객체인
