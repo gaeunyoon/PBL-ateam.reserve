@@ -579,8 +579,6 @@ colorDark로 바뀌고 imageButton20를 제외한 나머지 imageButton은 color
 - 이와 마찬가지로 나머지 버튼도 예약한 버튼과 예약가능한 버튼을 구분합니다.
 
 ![image](https://user-images.githubusercontent.com/62562198/85375455-46ae9580-b571-11ea-9db5-a977429942a1.png)
-![image](https://user-images.githubusercontent.com/62562198/85375512-5cbc5600-b571-11ea-9f3a-22a8065bbfb9.png)
-
 
 
 ### 6. 주문 내역 화면
@@ -661,7 +659,7 @@ view형태로 보여줍니다.
 
 -Splashscreen 이 실행된 이후에 첫번째 화면인 LoginActivity가 실행될 수 있도록 합니다.
 
-![image](https://user-images.githubusercontent.com/62562198/85372090-495abc00-b56c-11ea-9ebc-da83d3d65c34.png)
+![image](https://user-images.githubusercontent.com/62562198/85376550-d6087880-b572-11ea-96e0-54f7979290df.png)
 
 
 #### ● AndroidManifest.xml
