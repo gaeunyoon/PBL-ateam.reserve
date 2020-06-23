@@ -32,7 +32,7 @@
         //자리예약 버튼
 
         <Button
-            android:id="@+id/reserveButton"
+            android:id="@+id/stampButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
