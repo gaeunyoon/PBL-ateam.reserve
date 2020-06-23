@@ -280,7 +280,7 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ![image](https://user-images.githubusercontent.com/62562198/85272504-36d27b00-b4b7-11ea-8bb6-626055166b6f.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272583-536eb300-b4b7-11ea-979f-e9cd10c8a920.png)
 
--아이디를 입력하고 validateButton을 클릭하면 데이터베이스에 저장되어 있는 userID와 일치하지 않으면 "사용할 수 있는 아이디입니다."라는<br/>
+-아이디를 입력하고 validateButton을 클릭하면 데이터베이스에 저장되어 있는 userID와 일치하지 않으면 "사용할 수 있는 아이디입니다."라는
   메세지가 나옵니다. 그리고 데이터베이스 저장되어 있는 userID와 일치하면 "사용할 수 없는 아이디입니다."라는 메세지가 나옵니다.
 
 -아이디 중복체크 버튼을 누르면 버튼의 색과 idText찬의 색이 colorGray로 바뀝니다.
