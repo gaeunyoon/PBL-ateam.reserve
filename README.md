@@ -473,6 +473,11 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 #### ● CoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355641-0c7cce00-b548-11ea-8c06-61ed0597ce01.png)
 
+-레이아웃을 menu로 할당합니다.
+
+
+
+
 
 #### ● NoncoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355707-2e765080-b548-11ea-8eb4-8f938dff8d60.png)
