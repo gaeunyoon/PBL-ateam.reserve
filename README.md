@@ -322,6 +322,14 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 #### ● ValidateRequest.java
 ![image](https://user-images.githubusercontent.com/62562198/85363171-2f64ad80-b55b-11ea-889d-5a00695d5180.png)
 
+-자신의 도메인과 UserValidate.php를입력합니다. 이 UserValidate.php는 아이디 중복체크를 위한 php파일입니다.
+
+-안드로이드 스튜디오에서 실행한 어플에서 입력한 아이디가 데이터베이스에 userID값이 있는지 확인하기 위해서 PHP파일이 안드로이드 스튜디오
+와 데이터베이스를 연결 시켜줍니다.
+
+-userID가 입력되면 parameters에 입력됩니다.
+
+
 
 #### 2. 로그인
 #### ● LoginActivity.java
@@ -421,18 +429,45 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 ![image](https://user-images.githubusercontent.com/62562198/85355421-82cd0080-b547-11ea-8a20-fecd4c34f6cc.png)
 
--
-
 -매개변수 context, noticList를 선언합니다.
 
--
+-입력된 context, noticList를 각각의 매개변수에 할당합니다.
+
+-위에 객체로 할당한 noticeList를 가져오도록 하고 View로 보여줍니다. 이때 보여주는 view는 레이아웃 notice을 통해서 보여줍니다.
+
+-TextView의 아이디 noticeText, nameText, dateText를 각각 이름을 noticeText, nameText, dateText로 할당합니다.
+그리고 할당되어 있는 Text를 list에 넣는 값으로 notic, name, date를 넣어줍니다.
+
 
 
 
 ### 4. 메뉴 화면
+
 #### ● MenuActivity.java
+
 ![image](https://user-images.githubusercontent.com/62562198/85355474-a728dd00-b547-11ea-808b-073ffc8d917d.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355546-d2133100-b547-11ea-977e-0cfdcb76de93.png)
+
+
+-레이아웃을 activity_menu로 할당합니다.
+
+-Menu화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
+,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
+
+-menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
+
+-reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
+
+-statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+-menuButton을 클릭하였을 때, 화면에 coffeeButton, DesertButton, NoncoffeeButton이 있습니다.
+이 버튼들을 통해서 메뉴의 카테고리 별로 분류해서 메뉴를 주문할 수 있도록 하였습니다.
+
+-coffeeButton을 클릭하면 CoffeeActivity클래스로 화면이 이동하게 됩니다. 그리고 CoffeeActivity클래스를 시작합니다.
+
+-DesertButton을 클릭하면 DesertActivity클래스로 화면이 이동하게 됩니다. 그리고 DesertActivity클래스를 시작합니다.
+
+-NoncoffeeButton을 클릭하면 NonCoffeeActivity클래스로 화면이 이동하게 됩니다. 그리고 NonCoffeeActivity클래스를 시작합니다.
 
 
 #### ● CoffeeActivity.java
