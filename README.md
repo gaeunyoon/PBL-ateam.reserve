@@ -280,14 +280,37 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ![image](https://user-images.githubusercontent.com/62562198/85272504-36d27b00-b4b7-11ea-8bb6-626055166b6f.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272583-536eb300-b4b7-11ea-979f-e9cd10c8a920.png)
 
+<br>
 
+-레이아웃은 activity_register로 할당합니다.
+
+-각각의 EditText 아이디에 해당하는 EditText를 각각의 이름으로 할당하고 데이터베이스에 저장시킵니다.
+
+-validateButton은 아이디 중복체크 버튼으로 userID가 빈칸인 경우 "아이디는 빈칸일 수 없습니다."라는 메세지가 나오도록 합니다.
+
+-아이디를 입력하고 validateButton을 클릭하면 데이터베이스에 저장되어 있는 userID와 일치하지 않으면 "사용할 수 있는 아이디입니다."라는<br/>
+  메세지가 나옵니다. 그리고 데이터베이스 저장되어 있는 userID와 일치하면 "사용할 수 없는 아이디입니다."라는 메세지가 나옵니다.
+  
+-아이디 중복체크 버튼을 누르면 버튼의 색과 idText찬의 색이 colorGray로 바뀝니다.
+
+-regiseterButton은 회원가입창에 정보를 입력한 루 누르는 회원가입 버튼입니다.
+
+-regiseterButton을 눌렀을 때 아이디 중복체크 버튼을 누르지 않으면 "먼저 중복체크를 해주세요"라는 메세지가 나옵니다.
+
+-regiseterButton을 눌렀을 때 userID 또는 userPasssword 또는 userName 또는 userPhoneNumber 중 하나가 빈칸인 경우에
+  "빈칸없이 입력해주세요"라는 메세지가 나옵니다.
+  
+-그리고 모든 조건을 만족하고 regiseterButton을 누르면 "회원등록에 성공했습니다."라는 메세지가 나오고 만족하지 못하면 
+   "회원등록에 실패하였습니다"라는 메세지가 나옵니다.
+   
+ -모든 과정이 끝나면 onStop메소드를 통해서 RegisterActivity에서 나오게 됩니다.
 
 
 #### ● RegisterRequest.java
 
 ![image](https://user-images.githubusercontent.com/62562198/85272647-697c7380-b4b7-11ea-8661-5b08c03621bf.png)
 
-
+- 
 
 
 ###### <아이디 중복 체크>
