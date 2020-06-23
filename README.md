@@ -672,5 +672,9 @@ view형태로 보여줍니다.
  
  ## Ⅲ-3. 참고자료
 
+-로그인 회원가입 기능구현하기
+https://www.youtube.com/watch?v=ktjJ8xtt2Hg
+
+-DB연동하기
 
 
