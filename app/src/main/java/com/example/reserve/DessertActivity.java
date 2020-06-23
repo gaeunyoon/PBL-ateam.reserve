@@ -14,10 +14,10 @@ public class DessertActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_desertmenu);
 
-
         final Button reserveButton = (Button) findViewById(R.id.reserveButton);
         final Button menuButton = (Button) findViewById(R.id.menuButton);
         final Button orderButton = (Button) findViewById(R.id.orderButton);
+        final Button stampButton = (Button) findViewById(R.id.stampButton);
 
 
         menuButton.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +42,16 @@ public class DessertActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        stampButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), StampActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
         Button cartbutton = (Button) findViewById(R.id.cartButton);
         cartbutton.setOnClickListener(new View.OnClickListener() {

@@ -19,6 +19,7 @@ public class NonCoffeeActivity extends AppCompatActivity {
         final Button reserveButton = (Button) findViewById(R.id.reserveButton);
         final Button menuButton = (Button) findViewById(R.id.menuButton);
         final Button orderButton = (Button) findViewById(R.id.orderButton);
+        final Button stampButton = (Button) findViewById(R.id.stampButton);
 
 
         menuButton.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +42,15 @@ public class NonCoffeeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        stampButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), StampActivity.class);
+                startActivity(intent);
+
             }
         });
 
