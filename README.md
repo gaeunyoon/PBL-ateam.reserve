@@ -280,36 +280,14 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ![image](https://user-images.githubusercontent.com/62562198/85272504-36d27b00-b4b7-11ea-8bb6-626055166b6f.png)
 ![image](https://user-images.githubusercontent.com/62562198/85272583-536eb300-b4b7-11ea-979f-e9cd10c8a920.png)
 
-<br>
 
--레이아웃은 activity_register로 할당합니다.
-
--각각의 EditText 아이디에 해당하는 EditText를 각각의 이름으로 할당하고 데이터베이스에 저장시킵니다.
-
--validateButton은 아이디 중복체크 버튼으로 userID가 빈칸인 경우 "아이디는 빈칸일 수 없습니다."라는 메세지가 나오도록 합니다.
-
--아이디를 입력하고 validateButton을 클릭하면 데이터베이스에 저장되어 있는 userID와 일치하지 않으면 "사용할 수 있는 아이디입니다."라는<br/>
-  메세지가 나옵니다. 그리고 데이터베이스 저장되어 있는 userID와 일치하면 "사용할 수 없는 아이디입니다."라는 메세지가 나옵니다.
-  
--아이디를 입력하고아이디 중복체크 버튼을 누르고 "사용할 수 있는 버튼입니다"라는 메세지가 나오면 버튼의 색과 idText창의 색이 colorGray로 바뀝니다.
-
--regiseterButton은 회원가입창에 정보를 입력한 후 회원가입 버튼을 누르는데 그러면 입력한 정보들이 데이터베이스에 저장 됩니다.
-
--정보를 입력하고 regiseterButton을 눌렀을 때 아이디 중복체크 버튼을 누르지 않으면 "먼저 중복체크를 해주세요"라는 메세지가 나옵니다.
-
--regiseterButton을 눌렀을 때 userID 또는 userPasssword 또는 userName 또는 userPhoneNumber 중 하나라도 빈칸인 경우에는
-  "빈칸없이 입력해주세요"라는 메세지가 나옵니다.
-  
--그리고 아이디의 중복체크버튼을 눌렀을 때 "사용가능한 아이디입니다"라는 메세지가 나오고 빈칸없이 모든 창에 정보를 입력하고 regiseterButton을 누르  면 "회원등록에 성공했습니다."라는 메세지가 나오고 만족하지 못하면 "회원등록에 실패하였습니다"라는 메세지가 나옵니다.
-   
- -모든 과정이 끝나면 onStop메소드를 통해서 RegisterActivity에서 나오게 됩니다.
 
 
 #### ● RegisterRequest.java
 
 ![image](https://user-images.githubusercontent.com/62562198/85272647-697c7380-b4b7-11ea-8661-5b08c03621bf.png)
 
-- 
+
 
 
 ###### <아이디 중복 체크>
@@ -342,7 +320,11 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 ### 3. 메인 화면
 #### ● MainActivity.java
-
+![image](https://user-images.githubusercontent.com/62562198/85354822-59f83b80-b546-11ea-9b15-281cbb3268a4.png)
+![image](https://user-images.githubusercontent.com/62562198/85354858-6c727500-b546-11ea-9771-93edf7ba1727.png)
+![image](https://user-images.githubusercontent.com/62562198/85354899-83b16280-b546-11ea-89c9-8be0a2616cb4.png)
+![image](https://user-images.githubusercontent.com/62562198/85354959-a04d9a80-b546-11ea-80ea-df5a84578e54.png)
+![image](https://user-images.githubusercontent.com/62562198/85354985-afcce380-b546-11ea-96d9-ae1cdf71dca4.png)
 
 ##### <메인 layout>
 #### ● activity_main.xml
@@ -354,25 +336,19 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ##### -메인 화면에 들어갈 공지사항 List
 
 #### ● Notice.java
-
+![image](https://user-images.githubusercontent.com/62562198/85355328-5add9d00-b547-11ea-867b-317b845d79c9.png)
 
 #### ● NoticeListAdapter.java
-
-
+![image](https://user-images.githubusercontent.com/62562198/85355421-82cd0080-b547-11ea-8a20-fecd4c34f6cc.png)
 
 ##### <공지사항 layout>
 #### ● notice.xml
 
 
-
-
-
-
-
-
 ### 5. 메뉴 화면
 #### ● MenuActivity.java
-
+![image](https://user-images.githubusercontent.com/62562198/85355474-a728dd00-b547-11ea-808b-073ffc8d917d.png)
+![image](https://user-images.githubusercontent.com/62562198/85355546-d2133100-b547-11ea-977e-0cfdcb76de93.png)
 
 
 ##### <메뉴 layout>
@@ -380,6 +356,8 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 ### 6. Coffee 화면
 #### ● CoffeeActivity.java
+![image](https://user-images.githubusercontent.com/62562198/85355641-0c7cce00-b548-11ea-8c06-61ed0597ce01.png)
+
 
 ##### <Coffee layout>
 #### ● menu.xml
@@ -387,16 +365,15 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
  
 ###  7. Non-Coffee 화면
 #### ● NoncoffeeActivity.java
-
+![image](https://user-images.githubusercontent.com/62562198/85355707-2e765080-b548-11ea-8eb4-8f938dff8d60.png)
 
 ##### <Non-Coffee layout>
-#### ● activity_nonmenu.xml
- 
+#### ● activity_nonmenu.xml 
  
  
 ### 8. Dessert 화면
 #### ● DessertActivity.java
-
+![image](https://user-images.githubusercontent.com/62562198/85355744-45b53e00-b548-11ea-8656-0301d86a1a74.png)
 
 
 ##### <Dessert layout>
@@ -405,7 +382,8 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
  
 ### 9. 자리예약 화면
 #### ● Sit.java
-
+![image](https://user-images.githubusercontent.com/62562198/85355799-641b3980-b548-11ea-9123-9a2bdb3d902d.png)
+![image](https://user-images.githubusercontent.com/62562198/85355871-80b77180-b548-11ea-9bce-d7a4c34825eb.png)
 
 ##### <자리예약 layout>
 #### ● activity_sit.xml
@@ -414,17 +392,17 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ### 10. 주문 내역 화면
 #### ● MainActivity.java
 
-##### <메인 layout>
-#### ● activity_main.xml
 
 ### 11. 실행 화면
 #### ● Splashscreen.java
-
+![image](https://user-images.githubusercontent.com/62562198/85355962-ae9cb600-b548-11ea-97e9-092805dd4366.png)
+![image](https://user-images.githubusercontent.com/62562198/85355983-bcead200-b548-11ea-8108-29affe109daa.png)
 
 ##### <실행 화면 layout>
 #### ● activity_splashscreen.xml
 
 #### ● AndroidManifest.xml
+![image](https://user-images.githubusercontent.com/62562198/85356028-e0158180-b548-11ea-9bee-14c2456b0622.png)
 
 ## Ⅱ-4. 결과 실행
  
