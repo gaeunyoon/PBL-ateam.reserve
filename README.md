@@ -309,7 +309,12 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 ![image](https://user-images.githubusercontent.com/62562198/85272647-697c7380-b4b7-11ea-8661-5b08c03621bf.png)
 
+-자신의 도메인과 UserRegister.php를입력합니다.
 
+-여기서 UserRegister.php는 안드로이드 스튜디오로 실행한 어플에서 입력한 정보를 데이터 베이스와 연결해 줍니다.
+
+-안드로이드 스튜디오에서입력한 정보를 UserRegister.php파일을 통해서 아이디는 userID, 비밀번호는 userPassword, 이름은 userName, 
+ 전화번호는 userPhoneNumber로 할당하여 데이터베이스에 저장합니다.
 
 
 ###### <아이디 중복 체크>
