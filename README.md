@@ -334,12 +334,13 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ![image](https://user-images.githubusercontent.com/62562198/85270674-a2ffaf80-b4b4-11ea-8229-0077e8356ad7.png)
 ![image](https://user-images.githubusercontent.com/62562198/85270865-ece89580-b4b4-11ea-97be-c1aac96a1abf.png)
 
-
+-레이아웃은 activity_login으로 할당합니다.
+- LoginActivity는  RegisterActivity.class를 서브 클래스로 하여 RegisterActivity에서 회원가입 버튼인 registerButton을 클릭하였을 때    LoginActivity로 화면이 이동하게 됩니다.
+-안드로이드 스튜디오에서 실행한 어플인 로그인 창에서 입력받은 아이디는 idText, 비밀번호는 passwordText로 할당합니다.
 
 
 #### ● LoginRequest.java
 ![image](https://user-images.githubusercontent.com/62562198/85270937-0853a080-b4b5-11ea-8518-17fce33d304b.png)
-
 
 ##### <로그인 layout>
 #### ● activity_login.xml
