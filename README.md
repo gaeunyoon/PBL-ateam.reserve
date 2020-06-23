@@ -475,16 +475,61 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 -레이아웃을 menu로 할당합니다.
 
+-Coffee화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
+,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
 
+-Coffee화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
+여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
 
+-menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
+
+-reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
+
+-statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+-cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
 
 
 #### ● NoncoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355707-2e765080-b548-11ea-8eb4-8f938dff8d60.png)
 
+-레이아웃을 activity_nonmenu로 할당합니다.
+
+-Noncoffee화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
+,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
+
+-NonCoffee화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
+여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
+
+-menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
+
+-reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
+
+-statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+-cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+
 
 #### ● DessertActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355744-45b53e00-b548-11ea-8656-0301d86a1a74.png)
+
+
+-레이아웃을 activity_desertmenu로 할당합니다.
+
+-DesertActivity화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
+,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
+
+-DesertActivity화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
+여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
+
+-menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
+
+-reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
+
+-statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+-cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
 
  
  
