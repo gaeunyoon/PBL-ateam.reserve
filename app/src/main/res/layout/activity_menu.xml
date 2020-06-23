@@ -7,55 +7,92 @@
     tools:context=".MenuActivity">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="8dp">
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
 
         //메뉴버튼
+
         <Button
+            android:id="@+id/menuButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:id="@+id/menuButton"
+            android:background="@color/colorPrimaryDark"
             android:text="메뉴"
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:background="@color/colorPrimaryDark"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"/>
+            android:textStyle="bold" />
 
         //자리예약 버튼
+
         <Button
+            android:id="@+id/reserveButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:id="@+id/reserveButton"
+            android:background="@color/colorPrimaryDark"
             android:text="자리예약"
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:background="#ff99"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"/>
+            android:textStyle="bold" />
 
         //주문내역 버튼
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/statisticButton"
-            android:text="주문 내역"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            android:background="#ff99"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"/>
 
+    </LinearLayout>
+    //framelayout은 버튼 누를시 화면전환 (linear에서 relative, 즉 해당 fragment로전환)
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+
+            //메뉴버튼
+
+            //자리예약 버튼
+
+            <Button
+                android:id="@+id/orderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="주문 내역"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/stampButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="스탬프"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            //주문내역 버튼
+
+        </LinearLayout>
     </LinearLayout>
 
     //framelayout 버튼 누를시 화면전환

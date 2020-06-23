@@ -1,6 +1,5 @@
 package com.example.reserve;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +19,7 @@ public class Sit extends AppCompatActivity {
         setContentView(R.layout.activity_sit);
         final Button reserveButton=(Button) findViewById(R.id.reserveButton);
         final Button menuButton=(Button) findViewById(R.id.menuButton);
-        final Button statisticButton=(Button) findViewById(R.id.statisticButton);
+        final Button orderButton=(Button) findViewById(R.id.orderButton);
 
         menuButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -37,7 +36,7 @@ public class Sit extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
+        orderButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
                 Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
@@ -204,7 +203,6 @@ public class Sit extends AppCompatActivity {
 
     }
 
+
+
 }
-
-
-

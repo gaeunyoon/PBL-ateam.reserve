@@ -13,9 +13,10 @@ public class DessertActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_desertmenu);
+
         final Button reserveButton=(Button) findViewById(R.id.reserveButton);
         final Button menuButton=(Button) findViewById(R.id.menuButton);
-        final Button statisticButton=(Button) findViewById(R.id.statisticButton);
+        final Button orderButton=(Button) findViewById(R.id.orderButton);
         final Button cartButton=(Button) findViewById(R.id.cartButton);
 
         menuButton.setOnClickListener(new View.OnClickListener(){
@@ -33,7 +34,7 @@ public class DessertActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
+        orderButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
                 Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
@@ -41,12 +42,10 @@ public class DessertActivity extends AppCompatActivity {
             }
         });
 
-
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
-
                 startActivity(intent);
             }
         });

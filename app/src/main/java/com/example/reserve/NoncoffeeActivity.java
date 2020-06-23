@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class NoncoffeeActivity extends AppCompatActivity {
+public class NonCoffeeActivity extends AppCompatActivity {
 
 
     @Override
@@ -16,7 +16,7 @@ public class NoncoffeeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_nonmenu);
         final Button reserveButton=(Button) findViewById(R.id.reserveButton);
         final Button menuButton=(Button) findViewById(R.id.menuButton);
-        final Button statisticButton=(Button) findViewById(R.id.statisticButton);
+        final Button orderButton=(Button) findViewById(R.id.orderButton);
         final Button cartButton=(Button) findViewById(R.id.cartButton);
 
         menuButton.setOnClickListener(new View.OnClickListener(){
@@ -34,17 +34,17 @@ public class NoncoffeeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
+        orderButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
+                Intent intent=new Intent(getApplicationContext(),OrderActivity.class);
                 startActivity(intent);
             }
         });
 
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
 
                 startActivity(intent);

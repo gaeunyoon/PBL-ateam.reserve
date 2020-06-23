@@ -3,194 +3,242 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".OrderActivity">
-
+    android:orientation="vertical">
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="8dp">
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
 
         //메뉴버튼
+
         <Button
+            android:id="@+id/menuButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:id="@+id/menuButton"
+            android:background="@color/colorPrimaryDark"
             android:text="메뉴"
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:background="#ff99"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"/>
+            android:textStyle="bold" />
 
         //자리예약 버튼
+
         <Button
+            android:id="@+id/reserveButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:id="@+id/reserveButton"
+            android:background="@color/colorPrimaryDark"
             android:text="자리예약"
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:background="#ff99"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"/>
+            android:textStyle="bold" />
 
         //주문내역 버튼
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/statisticButton"
-            android:text="주문 내역"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            android:background="@color/colorPrimaryDark"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"/>
 
     </LinearLayout>
     //framelayout은 버튼 누를시 화면전환 (linear에서 relative, 즉 해당 fragment로전환)
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/user">
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
 
-            <LinearLayout
+            //메뉴버튼
+
+            //자리예약 버튼
+
+            <Button
+                android:id="@+id/orderButton"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
-                android:background="#ff99"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="주문 내역"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
-                <ImageButton
-                    android:layout_width="190dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:scaleType="center"
-                    android:src="@drawable/logo3" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="주문 내역"
-                    android:textColor="#ffffff"
-                    android:textSize="23dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            //주문내역에 나올 ListView작성
-            <LinearLayout
+            <Button
+                android:id="@+id/stampButton"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="스탬프"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            //주문내역 버튼
+
+        </LinearLayout>
+    </LinearLayout>
+    //framelayout은 버튼 누를시 화면전환 (linear에서 relative, 즉 해당 fragment로전환)
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:background="#ff99"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="center"
+                android:src="@drawable/logo3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="주문 내역"
+                android:textColor="#ffffff"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        //주문내역에 나올 ListView작성
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
             <TextView
                 android:id="@+id/orderText1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="TextView1"/>
+                android:text="TextView1" />
+
             <TextView
                 android:id="@+id/menuName1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="TextView1"/>
+                android:text="TextView1" />
         </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <TextView
-                    android:id="@+id/orderText2"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
-                <TextView
-                    android:id="@+id/menuname2"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <TextView
-                    android:id="@+id/orderText3"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
-                <TextView
-                    android:id="@+id/menuname3"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <TextView
-                    android:id="@+id/orderText4"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
-                <TextView
-                    android:id="@+id/menuname4"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <TextView
-                    android:id="@+id/orderText5"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
-                <TextView
-                    android:id="@+id/menuname5"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="TextView1"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/orderText2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
 
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/statisticListView"
-                android:layout_margin="10dp"
-                android:dividerHeight="10dp"
-                android:divider="#ffffff">
+            <TextView
+                android:id="@+id/menuname2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
+        </LinearLayout>
 
-            </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/orderText3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
+
+            <TextView
+                android:id="@+id/menuname3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/orderText4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
+
+            <TextView
+                android:id="@+id/menuname4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/orderText5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
+
+            <TextView
+                android:id="@+id/menuname5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView1" />
 
         </LinearLayout>
-    </FrameLayout>
-</LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/statisticListView"
+            android:layout_margin="10dp"
+            android:dividerHeight="10dp"
+            android:divider="#ffffff">
+
+        </ListView>
+
+    </LinearLayout>
+</FrameLayout>
+    </LinearLayout>

@@ -1,11 +1,11 @@
 package com.example.reserve;
 
+
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -28,11 +28,11 @@ public class OrderActivity extends AppCompatActivity {
     private OrderListAdapter adapter;
     private List<Order> statisticList;
     public static String userID;
-    private EditText editText1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_statistic);
 
         userID=getIntent().getStringExtra("userID");
@@ -45,7 +45,7 @@ public class OrderActivity extends AppCompatActivity {
         final LinearLayout user = (LinearLayout) findViewById(R.id.user);
         final Button reserveButton = (Button) findViewById(R.id.reserveButton);
         final Button menuButton = (Button) findViewById(R.id.menuButton);
-        final Button statisticButton = (Button) findViewById(R.id.statisticButton);
+        final Button orderButton = (Button) findViewById(R.id.orderButton);
 
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,14 +62,14 @@ public class OrderActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        statisticButton.setOnClickListener(new View.OnClickListener() {//메뉴현황화면으로 전환
+        orderButton.setOnClickListener(new View.OnClickListener() {//메뉴현황화면으로 전환
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
+
             }
         });
-
 
 
 
@@ -135,3 +135,5 @@ public class OrderActivity extends AppCompatActivity {
     }
     }
 }
+
+

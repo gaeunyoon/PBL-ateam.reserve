@@ -32,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedinstanceState){
+    protected void onCreate(Bundle savedinstanceState) {
         super.onCreate(savedinstanceState);
         setContentView(R.layout.activity_main);
 
         userID = getIntent().getStringExtra("userID");
 
-        noticeListView=(ListView) findViewById(R.id.noticeListView);
-        noticeList=new ArrayList<Notice>();
+        noticeListView = (ListView) findViewById(R.id.noticeListView);
+        noticeList = new ArrayList<Notice>();
 
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
@@ -51,22 +51,24 @@ public class MainActivity extends AppCompatActivity {
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
 
-        adapter=new NoticeListAdapter(getApplicationContext(), noticeList); //adapter에 noticelist 넣어줌
+        adapter = new NoticeListAdapter(getApplicationContext(), noticeList); //adapter에 noticelist 넣어줌
+
         noticeListView.setAdapter(adapter); //adapter에 들어간 내용 view 형태로 보여짐
 
         final LinearLayout notice = (LinearLayout) findViewById(R.id.notice);
         final Button reserveButton = (Button) findViewById(R.id.reserveButton);
         final Button menuButton = (Button) findViewById(R.id.menuButton);
-        final Button statisticButton = (Button) findViewById(R.id.statisticButton);
+        final Button orderButton = (Button) findViewById(R.id.orderButton);
+        final Button stampButton = (Button) findViewById(R.id.stampButton);
+
+
 
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+
                 startActivity(intent);
-                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
 
             }
         });
@@ -75,25 +77,33 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Sit.class);
                 startActivity(intent);
-                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
 
             }
         });
-        statisticButton.setOnClickListener(new View.OnClickListener() {//메뉴현황화면으로 전환
+        orderButton.setOnClickListener(new View.OnClickListener() {//메뉴현황화면으로 전환
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
-                menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-                reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                statisticButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+            }
+        });
+
+        stampButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), StampActivity.class);
+                startActivity(intent);
 
             }
         });
 
+
+        new BackgroundTask().execute();
+
     }
+
+
+
 
     class BackgroundTask extends AsyncTask<Void, Void, String>{
         String target;

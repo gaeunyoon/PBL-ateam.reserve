@@ -18,7 +18,8 @@ public class MenuActivity extends AppCompatActivity {
 
         final Button reserveButton=(Button) findViewById(R.id.reserveButton);
         final Button menuButton=(Button) findViewById(R.id.menuButton);
-        final Button statisticButton=(Button) findViewById(R.id.statisticButton);
+        final Button orderButton=(Button) findViewById(R.id.orderButton);
+        final Button stampButton=(Button) findViewById(R.id.stampButton);
 
         Button CoffeeButton = (Button) findViewById(R.id.CoffeeButton);
 
@@ -47,11 +48,12 @@ public class MenuActivity extends AppCompatActivity {
         NonCoffeeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),NoncoffeeActivity.class );
+                Intent intent = new Intent(getApplicationContext(),NonCoffeeActivity.class );
 
                 startActivity(intent);
             }
         });
+
 
         menuButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -69,7 +71,7 @@ public class MenuActivity extends AppCompatActivity {
 
             }
         });
-        statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
+        orderButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
                 Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
@@ -77,9 +79,15 @@ public class MenuActivity extends AppCompatActivity {
 
             }
         });
+        stampButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), StampActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
-
-
-
 }
