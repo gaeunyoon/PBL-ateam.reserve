@@ -382,17 +382,21 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 
 -adapter에 공지사항에 해당하는 noticelist를 넣어줍니다. 여기서 adapter에 들어갈 공지사항은 view형태로 보여줍니다.
 
--아이디가 notic인 LinearLayout을 notic으로 , 아이디가 reserveButton인 Button을 reserveButton으로, 아이디가 menuButton인 Button을
-menuButton으로 , 아이디가 statisticButton인 Button을 statisticButton으로 선언합니다.
+-아이디가 notice인 LinearLayout을 notice로 , 아이디가 reserveButton인 Button을 reserveButton으로,
+아이디가 menuButton인 Button을 menuButton으로 , 아이디가 statisticButton인 Button을 
+statisticButton으로 선언합니다.
 
--menuButton을 클릭하였을 때 MenuActivity 클래스로 화면이 이동하도록 하고 MenuActivity를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
+-menuButton을 클릭하였을 때 MenuActivity 클래스로 화면이 이동하도록 하고 MenuActivity를 시작합니다. 
+이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 
+설정한 colorPrimary로 바뀌도록 한다.
 
 -reserveButton을 클릭하였을 때 Sit 클래스로 화면이 이동하도록 하고 SitActivity를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
 
--statistcButton을 클릭하였을 때 StatisticActivity 클래스로 화면이 이동하도록 하고  StatisticActivity 를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
+-statistcButton을 클릭하였을 때 StatisticActivity 클래스로 화면이 이동하도록 하고  StatisticActivity 를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 
+color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
 
--우선 target을 선언하고고 target에 해당하는 공지사항 데이터베이스와 연결해주기 위해서 자신의 도메인과 
-안드로이드스튜디로와 데이터베이스를 연결해줄 NoticeList.php를 입력해서 해당 데이터베이스와 연결 시켜줍니다.
+-우선 target을 선언하고 target에 해당하는 공지사항 데이터베이스와 연결해주기 위해서 자신의 도메인과 
+안드로이드스튜디오와 데이터베이스를 연결해줄 NoticeList.php를 입력해서 해당 데이터베이스와 연결 시켜줍니다.
  
  -URL target에서 안드로이드 스튜디오에서 실행한 어플에서 입력한 받은 정보를 결과값으로 넘겨받아 결과값을 저장 할 수 있도록 합니다.
  그리고 inputstream에 있는 내용을 buffer에 담아서 읽을 수 있도록 합니다. 이때 값이 null이 아닐때까지 한 줄 씩 추가해줍니다.
@@ -475,94 +479,28 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 -레이아웃을 menu로 할당합니다.
 
--Coffee화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
-,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
 
--Coffee화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
-여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
 
--menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
-
--reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
-
--statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
-
--cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
 
 
 #### ● NoncoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355707-2e765080-b548-11ea-8eb4-8f938dff8d60.png)
 
--레이아웃을 activity_nonmenu로 할당합니다.
-
--Noncoffee화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
-,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
-
--NonCoffee화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
-여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
-
--menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
-
--reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
-
--statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
-
--cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
-
-
 
 #### ● DessertActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355744-45b53e00-b548-11ea-8656-0301d86a1a74.png)
 
-
--레이아웃을 activity_desertmenu로 할당합니다.
-
--DesertActivity화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
-,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
-
--DesertActivity화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
-여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
-
--menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
-
--reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
-
--statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
-
--cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
-
  
  
 ### 5. 자리예약 화면
-
-
 #### ● Sit.java
-
 ![image](https://user-images.githubusercontent.com/62562198/85355799-641b3980-b548-11ea-9123-9a2bdb3d902d.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355871-80b77180-b548-11ea-9bce-d7a4c34825eb.png)
+-sit 화면에서 상단바 각각의 메뉴, 자리예약, 주문내역 버튼들을 누를 때 해당 화면으로 넘어갈수 있는 이벤트 처리를 합니다.
 
--레이아웃을 activity_sit로 할당합니다.
+-그리고 자신이 원하는 자리의 이미지버튼들을 누를시 ReserveActivity 화면으로 넘어가 사용자 인증 후 자리를 예약할 수 있도록 합니다.
 
--Sit화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
-,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
-
--Sit화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
-여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
-
--menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
-
--reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
-
--statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
-
--cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
-
--자리화면에 해당하는 ImageButton 아이디 imageButton20, imageButton21, imageButton22, imageButton23, imageButton24, imageButton25, imageButton26, imageButton27를 각각의 이름인 imageButton20, imageButton21, imageButton22, imageButton23, imageButton24, imageButton25, imageButton26, imageButton27으로 할당합니다.
-
--자리화면에서 예약할 자리인 imageButton20을 클릭하면 ReserveActivity 클래스가 시작되도록 합니다. 그리고 color레이아웃에 작성한 colorDark로
-바뀌고 imageButton20를 제외한 나머지 imageButton은 color레이아웃에 작성한 colorGray로 바꿔줍니다.
-
-- 이와 마찬가지로 나머지 버튼도 예약한 버튼과 예약가능한 버튼을 구분합니다.
+-예약된자리는 버튼 클릭후 colorDark로 만들어줘서 예약된 자리임을 나타내주도록 합니다.
 
 
 
@@ -572,18 +510,74 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 ![image](https://user-images.githubusercontent.com/62562198/85363049-e280d700-b55a-11ea-9446-8db0a71a1dda.png)
 ![image](https://user-images.githubusercontent.com/62562198/85363078-f4627a00-b55a-11ea-9168-f0c3ac216fcd.png)
 
+-멤버변수 statisticListView, adapter, statisticList, userID를 만들어줍니다.
+
+-레이아웃을 activity_statistic으로 할당합니다.
+
+-userID는 입력된 사용자의 userID를 할당되도록 합니다.
+
+-OrderListAdapter에 주문내역 statisticList 를 넣어줍니다. 여기서 adapter에 들어갈 주문내역은
+view형태로 보여줍니다.
+
+-아이디가 notice인 LinearLayout을 notice로 , 아이디가 reserveButton인 Button을 reserveButton으로, 
+아이디가 menuButton인 Button을 menuButton으로 , 아이디가 statisticButton인 Button을 statisticButton으로 선언합니다.
+
+-menuButton을 클릭하였을 때 MenuActivity 클래스로 화면이 이동하도록 하고 MenuActivity를 시작합니다.
+
+-reserveButton을 클릭하였을 때 Sit 클래스로 화면이 이동하도록 하고 SitActivity를 시작합니다.
+
+-statistcButton을 클릭하였을 때 StatisticActivity 클래스로 화면이 이동하도록 하고 StatisticActivity 를 시작합니다. 
+
+-우선 target을 선언하고 target에 해당하는 주문내역 데이터베이스와 연결해주기 위해서 자신의 도메인과 
+안드로이드스튜디와 데이터베이스를 연결해줄 menulist.php를 입력해서 해당 데이터베이스와 연결 시켜줍니다.
+ 
+ -URL target에서 안드로이드 스튜디오에서 실행한 어플에서 입력한 받은 정보를 결과값으로 넘겨받아 결과값을 저장 할 수 있도록 합니다.
+ 그리고 inputstream에 있는 내용을 buffer에 담아서 읽을 수 있도록 합니다. 이때 값이 null이 아닐때까지 한 줄 씩 추가해줍니다.
+ 
+ -그리고 활동이 끝나면 연결을 끊어줍니다.
+ 
+ -onProgressUpdate를 통해서 response에 주문내역 리스트를 넣어줍니다. 이 주문내역에는 주문번호, 
+ 사용자아이디, 메뉴이름, 주문수량을 넣을 수 있습니다.
+  
+ -이때 카운트가 array크기보다 작을 때까지 현재 배열 원소값을 넣을 수 있도록 하고 
+ userID, menuID, menuName, menuAmount 값을 가져와서 하나의 주문 객체인
+ Order statistic을 만들어주어 statisticList에 추가 해줍니다.
+
 #### ● Order.java
 ![image](https://user-images.githubusercontent.com/62562198/85362916-a3eb1c80-b55a-11ea-88b0-433f5cf8cf4a.png)
+
+-Order 클래스는 주무내역에 들어갈 List를 생성자를 생성하고 입력값을 할당하는 클래스입니다.
+
+-주문내역에 들어갈 userID, menuID, menuName, menuAmount 매개변수를 선업힙니다.
+
+-그리고 Order 라는 생성자를 생성하여 매개변수 userID, menuID, menuName, menuAmount를 사용합니다.
+
+-getter, setter를 생성해서 입력받은 userID는 userID로, 입력받은 menuID는 menuID로 ,
+입력받은 menuName을 menuName로, 입력받은 menuAmount를  menuAmount로 할당합니다.
+
 
 #### ● OrderListAdapter.java
 ![image](https://user-images.githubusercontent.com/62562198/85363122-10feb200-b55b-11ea-89f2-45d3486ce079.png)
 
+-매개변수 context, statisticList를 선언합니다.
+
+-입력된 context, statisticList를 각각의 매개변수에 할당합니다.
+
+-위에 객체로 할당한 statisticList를 가져오도록 하고 View로 보여줍니다. 이때 보여주는 view는 레이아웃 user를 통해서 보여줍니다.
+
+-TextView의 아이디 orderText, idText, menuText, amountText 각각 이름을 orderText, idText, menuText, amountText로 할당합니다.
+
+-그리고 할당되어 있는 Text에 list의 userID, menuID, menuName, menuAmount 값들을 넣어줍니다.
 
 
 ### 7. 실행 화면
 #### ● Splashscreen.java
 ![image](https://user-images.githubusercontent.com/62562198/85355962-ae9cb600-b548-11ea-97e9-092805dd4366.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355983-bcead200-b548-11ea-8108-29affe109daa.png)
+
+-처음 어플을 실행할때 보여주는 화면으로 로고사진이 실행할때 보여지도록 합니다.
+
+-Splashscreen 이 실행된 이후에 첫번째 화면인 LoginActivity가 실행될 수 있도록 합니다.
 
 
 #### ● AndroidManifest.xml
@@ -592,22 +586,7 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 ## Ⅱ-4. 결과 실행
  
- 
----
 
-
-# Ⅲ. 결론
-
- ## Ⅲ-1. 결론
- 
- 
- ## Ⅲ-2. 기대효과
- 
- 
- ## Ⅲ-3. 참고자료
- 
- 
- ## Ⅲ-4. 프로젝트 소감
 
 
 
