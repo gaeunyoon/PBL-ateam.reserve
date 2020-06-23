@@ -330,6 +330,8 @@ regiseterButton을 누르면 "회원등록에 성공했습니다."라는 메세�
 
 -userID가 입력되면 parameters에 입력됩니다.
 
+![image](https://user-images.githubusercontent.com/62562198/85372256-8757e000-b56c-11ea-87e3-891d7c3eed17.png)
+
 
 
 #### 2. 로그인
@@ -364,6 +366,8 @@ regiseterButton을 누르면 "회원등록에 성공했습니다."라는 메세�
 
 -안드로이드 스튜디오에서 입력한 정보를 UserLogin.php파일을 통해서 아이디는 userID, 비밀번호는 userPassword로 할당하여 데이터베이스에 
 저장합니다.
+
+![image](https://user-images.githubusercontent.com/62562198/85372189-73ac7980-b56c-11ea-940f-2dbcd110129f.png)
 
 
 
@@ -439,6 +443,7 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 -TextView의 아이디 noticeText, nameText, dateText를 각각 이름을 noticeText, nameText, dateText로 할당합니다.
 그리고 할당되어 있는 Text를 list에 넣는 값으로 notic, name, date를 넣어줍니다.
 
+![image](https://user-images.githubusercontent.com/62562198/85372352-ac4c5300-b56c-11ea-8f3f-409706ea0fef.png)
 
 
 
@@ -470,6 +475,9 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 -NoncoffeeButton을 클릭하면 NonCoffeeActivity클래스로 화면이 이동하게 됩니다. 그리고 NonCoffeeActivity클래스를 시작합니다.
 
+![image](https://user-images.githubusercontent.com/62562198/85372741-3c8a9800-b56d-11ea-8124-956349e17305.png)
+
+
 
 #### ● CoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355641-0c7cce00-b548-11ea-8c06-61ed0597ce01.png)
@@ -489,6 +497,8 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 -statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
 
 -cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+![image](https://user-images.githubusercontent.com/62562198/85375290-0b13cb80-b571-11ea-9508-c93ecde409ce.png)
 
 
 #### ● NoncoffeeActivity.java
@@ -511,6 +521,9 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 -cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를
 시작합니다.
 
+![image](https://user-images.githubusercontent.com/62562198/85375372-2da5e480-b571-11ea-94e9-089f31597e81.png)
+
+
 #### ● DessertActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355744-45b53e00-b548-11ea-8656-0301d86a1a74.png)
  
@@ -530,6 +543,9 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 
 -cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를
 시작합니다.
+
+![image](https://user-images.githubusercontent.com/62562198/85373038-a5721000-b56d-11ea-923c-c1da6aa6e474.png)
+![image](https://user-images.githubusercontent.com/62562198/85373086-b6228600-b56d-11ea-8840-1d139ec47ef5.png)
 
 
  
@@ -561,6 +577,9 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
 colorDark로 바뀌고 imageButton20를 제외한 나머지 imageButton은 color레이아웃에 작성한 colorGray로 바꿔줍니다.
 
 - 이와 마찬가지로 나머지 버튼도 예약한 버튼과 예약가능한 버튼을 구분합니다.
+
+![image](https://user-images.githubusercontent.com/62562198/85375455-46ae9580-b571-11ea-9db5-a977429942a1.png)
+![image](https://user-images.githubusercontent.com/62562198/85375512-5cbc5600-b571-11ea-9f3a-22a8065bbfb9.png)
 
 
 
@@ -629,6 +648,9 @@ view형태로 보여줍니다.
 
 -그리고 할당되어 있는 Text에 list의 userID, menuID, menuName, menuAmount 값들을 넣어줍니다.
 
+![image](https://user-images.githubusercontent.com/62562198/85375656-955c2f80-b571-11ea-9811-316d05e1b237.png)
+
+
 
 ### 7. 실행 화면
 #### ● Splashscreen.java
@@ -638,6 +660,8 @@ view형태로 보여줍니다.
 -처음 어플을 실행할때 보여주는 화면으로 로고사진이 실행할때 보여지도록 합니다.
 
 -Splashscreen 이 실행된 이후에 첫번째 화면인 LoginActivity가 실행될 수 있도록 합니다.
+
+![image](https://user-images.githubusercontent.com/62562198/85372090-495abc00-b56c-11ea-9ebc-da83d3d65c34.png)
 
 
 #### ● AndroidManifest.xml
