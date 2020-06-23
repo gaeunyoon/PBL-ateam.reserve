@@ -36,7 +36,7 @@ public class DessertActivity extends AppCompatActivity {
         statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(getApplicationContext(),StatisticActivity.class);
+                Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class DessertActivity extends AppCompatActivity {
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), StatisticActivity.class);
+                Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
 
                 startActivity(intent);
             }

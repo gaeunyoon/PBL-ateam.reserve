@@ -7,11 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
 public class ReserveActivity extends AppCompatActivity {
 
     @Override
@@ -41,7 +36,7 @@ public class ReserveActivity extends AppCompatActivity {
         statisticButton.setOnClickListener(new View.OnClickListener() {//메뉴현황화면으로 전환
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Statistic.class);
+                Intent intent = new Intent(getApplicationContext(), Order.class);
                 startActivity(intent);
             }
         });

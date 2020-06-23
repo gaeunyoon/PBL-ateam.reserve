@@ -37,15 +37,15 @@ public class NoncoffeeActivity extends AppCompatActivity {
         statisticButton.setOnClickListener(new View.OnClickListener(){//메뉴현황화면으로 전환
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(getApplicationContext(),StatisticActivity.class);
+                Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
             }
         });
 
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), StatisticActivity.class);
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), OrderActivity.class);
 
                 startActivity(intent);
             }

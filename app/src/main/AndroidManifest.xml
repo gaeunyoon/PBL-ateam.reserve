@@ -15,10 +15,9 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".Sit" />
         <activity android:name=".CoffeeActivity" />
-        <activity android:name=".StatisticActivity" />
+        <activity android:name=".OrderActivity" />
         <activity android:name=".Splashscreen"
             android:label="A RESEVE">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -15,9 +15,10 @@ import java.util.List;
 
 
 public class CoffeeActivity extends AppCompatActivity {
+
     private ListView statisticListView;
-    private StatisticListAdapter adapter;
-    private List<Statistic> statisticList;
+    private OrderListAdapter adapter;
+    private List<Order> statisticList;
     Button buttonEvent;
     EditText editTextNo;
     TextView text1;
@@ -52,14 +53,15 @@ public class CoffeeActivity extends AppCompatActivity {
         statisticButton.setOnClickListener(new View.OnClickListener() {//메뉴현황화면으로 전환
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), StatisticActivity.class);
+                Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
             }
         });
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), StatisticActivity.class);
+                Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
+
                 startActivity(intent);
             }
         });
@@ -67,10 +69,10 @@ public class CoffeeActivity extends AppCompatActivity {
     }
 
     public void onClick(View v) {
-        Intent intent = new Intent(CoffeeActivity.this, Statistic.class);
+        Intent intent = new Intent(CoffeeActivity.this, Order.class);
 
         // No 입력 값을 int 값으로 변환하여 전달.
-        EditText editTextNo = (EditText) findViewById(R.id.editTextNo) ;
+        EditText editTextNo = (EditText) findViewById(R.id.editText1) ;
         String strNo = editTextNo.getText().toString() ;
         if (!strNo.isEmpty() && strNo.matches("^[0-9]*$")) { // check numbers by RegEx.
             intent.putExtra("contact_no", Integer.parseInt(strNo)) ;
@@ -85,4 +87,4 @@ public class CoffeeActivity extends AppCompatActivity {
         startActivity(intent) ;
     }
 
-    }
+}

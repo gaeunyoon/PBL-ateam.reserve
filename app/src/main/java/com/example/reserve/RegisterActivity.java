@@ -2,7 +2,6 @@ package com.example.reserve;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -17,14 +16,12 @@ import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private ArrayAdapter adapter;
     private String userID;
     private String userPassword;
     private String userName;
     private String userPhoneNumber;
     private AlertDialog dialog;
     private boolean validate=false;
-    private Button CoffeeButton;
 
 
     @Override

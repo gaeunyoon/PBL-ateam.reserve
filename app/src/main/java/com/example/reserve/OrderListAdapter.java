@@ -8,33 +8,29 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class StatisticListAdapter extends BaseAdapter {
+public class OrderListAdapter extends BaseAdapter {
 
     private Context context;
-    private List<Statistic> statisticList;
+    private List<Order> statisticList;
 
-    public StatisticListAdapter(Context context, List<Statistic> statisticList) {
+    public OrderListAdapter(Context context, List<Order> statisticList) {
         this.context = context;
         this.statisticList=statisticList;
-
     }
     @Override
     public int getCount() {
         return statisticList.size();
     }
 
-
     @Override
     public Object getItem(int i) {
         return statisticList.get(i);
     }
 
-
     @Override
     public long getItemId(int i) {
         return i;
     }
-
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
@@ -51,10 +47,7 @@ public class StatisticListAdapter extends BaseAdapter {
         menuText.setText(statisticList.get(i).getMenuName());
         amountText.setText(statisticList.get(i).getMenuAmount()+"개");
 
-
-
         v.setTag(statisticList.get(i).getUserID());
-
         return v;
     }
 

@@ -121,7 +121,7 @@ tools:context=".CoffeeActivity">
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextNo"
+                android:id="@+id/editText1"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"

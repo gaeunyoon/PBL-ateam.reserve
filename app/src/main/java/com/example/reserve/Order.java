@@ -1,6 +1,7 @@
 package com.example.reserve;
 
-public class Statistic{
+public class Order {
+    //메뉴번호, 주문아이디, 메뉴이름, 주문수량
     String userID;
     String menuID;
     String menuName;
@@ -41,7 +42,7 @@ public class Statistic{
 
 
     //생성자 생성
-    public Statistic(String menuID, String userID, String menuName,String menuAmount) {
+    public Order(String menuID, String userID, String menuName, String menuAmount) {
         this.userID = userID;
         this.menuID = menuID;
         this.menuName = menuName;

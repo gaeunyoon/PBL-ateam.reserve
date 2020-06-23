@@ -23,18 +23,15 @@ public class NoticeListAdapter extends BaseAdapter {
         return noticeList.size();
     }
 
-
     @Override
     public Object getItem(int i) {
         return noticeList.get(i);
     }
 
-
     @Override
     public long getItemId(int i) {
         return i;
     }
-
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {

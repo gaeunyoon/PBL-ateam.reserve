@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         noticeListView=(ListView) findViewById(R.id.noticeListView);
         noticeList=new ArrayList<Notice>();
+
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
         noticeList.add(new Notice("공지사항입니다.", "Ateam", "2020-05-11"));
+
         adapter=new NoticeListAdapter(getApplicationContext(), noticeList); //adapter에 noticelist 넣어줌
         noticeListView.setAdapter(adapter); //adapter에 들어간 내용 view 형태로 보여짐
 
@@ -82,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         statisticButton.setOnClickListener(new View.OnClickListener() {//메뉴현황화면으로 전환
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), StatisticActivity.class);
+                Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
                 startActivity(intent);
                 menuButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 reserveButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
