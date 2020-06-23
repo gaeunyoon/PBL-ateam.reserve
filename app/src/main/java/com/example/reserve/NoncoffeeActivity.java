@@ -14,10 +14,10 @@ public class NonCoffeeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nonmenu);
-        final Button reserveButton=(Button) findViewById(R.id.reserveButton);
-        final Button menuButton=(Button) findViewById(R.id.menuButton);
-        final Button orderButton=(Button) findViewById(R.id.orderButton);
-        final Button cartButton=(Button) findViewById(R.id.cartButton);
+         Button reserveButton= findViewById(R.id.reserveButton);
+         Button menuButton= findViewById(R.id.menuButton);
+         Button orderButton= findViewById(R.id.orderButton);
+         Button cartButton= findViewById(R.id.cartButton);
 
         menuButton.setOnClickListener(new View.OnClickListener(){
             @Override
