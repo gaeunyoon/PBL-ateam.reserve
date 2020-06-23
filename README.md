@@ -347,11 +347,23 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
  버튼이 나오게 됩니다.
  
  -로그인에 성공하게되면 userID, userPassword를 매개변수로 하여 loginRequest에 추가 되게 된다. 
+ 
+ -그리고 Onstop메소드를 통해서 LoginActivity에서 빠져나오게 됩니다.
 
 
 
 #### ● LoginRequest.java
 ![image](https://user-images.githubusercontent.com/62562198/85270937-0853a080-b4b5-11ea-8518-17fce33d304b.png)
+
+
+-자신의 도메인과 UserLogin.php를입력합니다.
+
+-여기서 UserLogin.php는 안드로이드 스튜디오로 실행한 어플에서 입력한 정보를 데이터 베이스와 연결해 줍니다.
+
+-안드로이드 스튜디오에서 입력한 정보를 UserLogin.php파일을 통해서 아이디는 userID, 비밀번호는 userPassword로 할당하여 데이터베이스에 저장합니다.
+
+
+
 
 ##### <로그인 layout>
 #### ● activity_login.xml
@@ -364,6 +376,35 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ![image](https://user-images.githubusercontent.com/62562198/85354899-83b16280-b546-11ea-89c9-8be0a2616cb4.png)
 ![image](https://user-images.githubusercontent.com/62562198/85354959-a04d9a80-b546-11ea-80ea-df5a84578e54.png)
 ![image](https://user-images.githubusercontent.com/62562198/85354985-afcce380-b546-11ea-96d9-ae1cdf71dca4.png)
+
+-멤버변수 noticListView, adapter, noticeList, userID를 만들어줍니다.
+
+-레이아웃을 activity_main으로 할당합니다.
+
+-userID는 입력된 사용자의 userID를 할당되도록 합니다.
+
+-adapter에 공지사항에 해당하는 noticelist를 넣어줍니다. 여기서 adapter에 들어갈 공지사항은 view형태로 보여줍니다.
+
+-아이디가 notic인 LinearLayout을 notic으로 , 아이디가 reserveButton인 Button을 reserveButton으로, 아이디가 menuButton인 Button을
+menuButton으로 , 아이디가 statisticButton인 Button을 statisticButton으로 선언합니다.
+
+-menuButton을 클릭하였을 때 MenuActivity 클래스로 화면이 이동하도록 하고 MenuActivity를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
+
+-reserveButton을 클릭하였을 때 Sit 클래스로 화면이 이동하도록 하고 SitActivity를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
+
+-statistcButton을 클릭하였을 때 StatisticActivity 클래스로 화면이 이동하도록 하고  StatisticActivity 를 시작합니다. 이때 menuButton, reserveButton, statisticButton을 클릭하였을 때 각각 버튼의 색이 color레이아웃에 설정한 colorPrimary로 바뀌도록 한다.
+
+-우선 target을 선언하고고 target에 해당하는 공지사항 데이터베이스와 연결해주기 위해서 자신의 도메인과 
+안드로이드스튜디로와 데이터베이스를 연결해줄 NoticeList.php를 입력해서 해당 데이터베이스와 연결 시켜줍니다.
+ 
+ -URL target에서 안드로이드 스튜디오에서 실행한 어플에서 입력한 받은 정보를 결과값으로 넘겨받아 결과값을 저장 할 수 있도록 합니다.
+ 그리고 inputstream에 있는 내용을 buffer에 담아서 읽을 수 있도록 합니다. 이때 값이 null이 아닐때까지 한 줄 씩 추가해줍니다.
+ 
+ -그리고 활동이 끝나면 연결을 끊어줍니다.
+
+
+
+
 
 ##### <메인 layout>
 #### ● activity_main.xml
