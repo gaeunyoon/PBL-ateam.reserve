@@ -320,11 +320,8 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ###### <아이디 중복 체크>
 
 #### ● ValidateRequest.java
+![image](https://user-images.githubusercontent.com/62562198/85358711-6765f380-b54f-11ea-85da-0f6363521bfd.png)
 
-
-###### <회원가입 layout>
-
-#### ● activity_register.xml
 
 
 
@@ -344,8 +341,6 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 #### ● LoginRequest.java
 ![image](https://user-images.githubusercontent.com/62562198/85270937-0853a080-b4b5-11ea-8518-17fce33d304b.png)
 
-##### <로그인 layout>
-#### ● activity_login.xml
 
 
 ### 3. 메인 화면
@@ -356,13 +351,7 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 ![image](https://user-images.githubusercontent.com/62562198/85354959-a04d9a80-b546-11ea-80ea-df5a84578e54.png)
 ![image](https://user-images.githubusercontent.com/62562198/85354985-afcce380-b546-11ea-96d9-ae1cdf71dca4.png)
 
-##### <메인 layout>
-#### ● activity_main.xml
 
-
-
-
-### 4. 공지사항
 ##### -메인 화면에 들어갈 공지사항 List
 
 #### ● Notice.java
@@ -371,65 +360,45 @@ https://help.cafe24.com/cs/cs_faq_view.php?idx=467<br/>
 #### ● NoticeListAdapter.java
 ![image](https://user-images.githubusercontent.com/62562198/85355421-82cd0080-b547-11ea-8a20-fecd4c34f6cc.png)
 
-##### <공지사항 layout>
-#### ● notice.xml
 
 
-### 5. 메뉴 화면
+### 4. 메뉴 화면
 #### ● MenuActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355474-a728dd00-b547-11ea-808b-073ffc8d917d.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355546-d2133100-b547-11ea-977e-0cfdcb76de93.png)
 
 
-##### <메뉴 layout>
-#### ● activity_menu.xml
-
-### 6. Coffee 화면
+### 5. Coffee 화면
 #### ● CoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355641-0c7cce00-b548-11ea-8c06-61ed0597ce01.png)
-
-
-##### <Coffee layout>
-#### ● menu.xml
  
  
-###  7. Non-Coffee 화면
+###  6. Non-Coffee 화면
 #### ● NoncoffeeActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355707-2e765080-b548-11ea-8eb4-8f938dff8d60.png)
 
-##### <Non-Coffee layout>
-#### ● activity_nonmenu.xml 
- 
- 
-### 8. Dessert 화면
+
+### 7. Dessert 화면
 #### ● DessertActivity.java
 ![image](https://user-images.githubusercontent.com/62562198/85355744-45b53e00-b548-11ea-8656-0301d86a1a74.png)
-
-
-##### <Dessert layout>
- #### ● activity_desertmenu.xml
  
  
-### 9. 자리예약 화면
+### 8. 자리예약 화면
 #### ● Sit.java
 ![image](https://user-images.githubusercontent.com/62562198/85355799-641b3980-b548-11ea-9123-9a2bdb3d902d.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355871-80b77180-b548-11ea-9bce-d7a4c34825eb.png)
 
-##### <자리예약 layout>
-#### ● activity_sit.xml
 
-
-### 10. 주문 내역 화면
+### 9. 주문 내역 화면
 #### ● MainActivity.java
 
 
-### 11. 실행 화면
+### 10. 실행 화면
 #### ● Splashscreen.java
 ![image](https://user-images.githubusercontent.com/62562198/85355962-ae9cb600-b548-11ea-97e9-092805dd4366.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355983-bcead200-b548-11ea-8108-29affe109daa.png)
 
-##### <실행 화면 layout>
-#### ● activity_splashscreen.xml
+
 
 #### ● AndroidManifest.xml
 ![image](https://user-images.githubusercontent.com/62562198/85356028-e0158180-b548-11ea-9bee-14c2456b0622.png)
