@@ -699,4 +699,16 @@ https://www.youtube.com/watch?v=ktjJ8xtt2Hg
 <br>
 
 -DB연동하기<br>
-https://www.youtube.com/watch?v=8cOh8YYouco
+https://www.youtube.com/watch?v=8cOh8YYouco<br>
+<br>
+-화면전환<br>
+https://www.youtube.com/watch?v=EKCQ6sxMWNo<br>
+<br>
+
+-getter, setter<br>
+https://lktprogrammer.tistory.com/171<br>
+
+
+
+
+
