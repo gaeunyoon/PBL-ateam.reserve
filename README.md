@@ -534,9 +534,35 @@ getter, setter를 생성해서 입력받은 notice을 notice으로, 입력받은
  
  
 ### 5. 자리예약 화면
+
+
 #### ● Sit.java
+
 ![image](https://user-images.githubusercontent.com/62562198/85355799-641b3980-b548-11ea-9123-9a2bdb3d902d.png)
 ![image](https://user-images.githubusercontent.com/62562198/85355871-80b77180-b548-11ea-9bce-d7a4c34825eb.png)
+
+-레이아웃을 activity_sit로 할당합니다.
+
+-Sit화면 상단에 위치한 reserverButton, menuButton, statisticButton이 있는데 이 버튼들의 아이디가 reserverButton
+,menuButton, statisticButton인 Button을 각각 이름을 reserverButton, menuButton,statisticButton으로 할당합니다.
+
+-Sit화면에서 메뉴를 선택하고 메뉴 수량을 입력하고 cart버튼을 클릭하면 메뉴와 메뉴수량의 정보가 주문내역에 넘어가도록 합니다.
+여기서 cart버튼은 아이디가 cartButton인 Button의 이름을 cartButtond으로 할당합니다.
+
+-menuButton을 클릭하면 MenuActivity클래스로 화면이 이동하게 됩니다. 그리고 MenuActivity클래스를 시작합니다.
+
+-reserveButton을 클릭하면 sit클래스로 화면이 이동하게 됩니다. 그리고 sit클래스를 시작합니다.
+
+-statisticButton을 클릭하면 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+-cartButton을 클릭하도 statisticButton과 마찬가지로 StatisticActivity클래스로 화면이 이동하게 됩니다. 그리고 StatisticActivity클래스를 시작합니다.
+
+-자리화면에 해당하는 ImageButton 아이디 imageButton20, imageButton21, imageButton22, imageButton23, imageButton24, imageButton25, imageButton26, imageButton27를 각각의 이름인 imageButton20, imageButton21, imageButton22, imageButton23, imageButton24, imageButton25, imageButton26, imageButton27으로 할당합니다.
+
+-자리화면에서 예약할 자리인 imageButton20을 클릭하면 ReserveActivity 클래스가 시작되도록 합니다. 그리고 color레이아웃에 작성한 colorDark로
+바뀌고 imageButton20를 제외한 나머지 imageButton은 color레이아웃에 작성한 colorGray로 바꿔줍니다.
+
+- 이와 마찬가지로 나머지 버튼도 예약한 버튼과 예약가능한 버튼을 구분합니다.
 
 
 
